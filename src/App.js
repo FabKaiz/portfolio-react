@@ -1,6 +1,6 @@
 import { About, Contact, Header, Portfolio, Project, Qualification, Skills } from './container'
 import { Navbar, Footer } from './components'
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
