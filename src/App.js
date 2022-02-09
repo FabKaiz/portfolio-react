@@ -1,9 +1,20 @@
 import './App.css';
 
+import { About, Contact, Header, Portfolio, Project, Qualification, Skills } from './container'
+import { Navbar, Footer } from './components'
+
 function App() {
   return (
     <div className="App">
-      <h2>App</h2>
+      <Navbar />
+      <Header />
+      <About />
+      <Skills />
+      <Qualification />
+      <Portfolio />
+      <Project />
+      <Contact />
+      <Footer />
     </div>
   );
 }
