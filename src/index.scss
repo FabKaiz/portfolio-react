@@ -144,7 +144,6 @@ img {
 
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -172,4 +171,62 @@ img {
 /* Change background header */
 .scroll-header {
   box-shadow: 0 -1px 9px rgba(0, 0, 0, 0.25);
+}
+
+/*==================== LAYOUT Media Queries ====================*/
+
+
+@media screen and (min-width:841px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding: 6rem 0 2rem
+  }
+
+  .section__subtitle {
+    margin-bottom: 4rem;
+  }
+
+  .header {
+    top: 0;
+    bottom: initial;
+  }
+
+  .header,
+  .main,
+  .footer__container {
+    padding: 0 2rem;
+  }
+
+
+}
+
+@media screen and (min-width: 560px) {
+  .skills__container {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .about__container,
+  .skills__container,
+  .portfolio__content,
+  .project__container,
+  .contact__container,
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
 }

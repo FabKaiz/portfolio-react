@@ -11,6 +11,7 @@ import {
 
 import { images } from "../../constants";
 import "./Navbar.scss";
+import { DarkMode } from "../../components";
 
 const Navbar = () => {
  
@@ -34,14 +35,8 @@ const Navbar = () => {
 
             <li className="nav__item">
               <a href="#about" className="nav__link">
-                <AiOutlineUser className="nav__icon" />À propos
-              </a>
-            </li>
-
-            <li className="nav__item">
-              <a href="#skills" className="nav__link">
-                <AiOutlineFileDone className="nav__icon" />
-                Compétences
+                <AiOutlineUser className="nav__icon" />
+                À propos
               </a>
             </li>
 
@@ -61,9 +56,16 @@ const Navbar = () => {
             </li>
 
             <li className="nav__item">
+              <a href="#skills" className="nav__link">
+                <AiOutlineFileDone className="nav__icon" />
+                Compétences
+              </a>
+            </li>
+
+            <li className="nav__item">
               <a href="#contact" className="nav__link">
                 <BiMailSend className="nav__icon" />
-                Me contacter
+                Contact
               </a>
             </li>
           </ul>
@@ -72,7 +74,7 @@ const Navbar = () => {
         </div>
 
         <div className="nav__btns">
-          {/* <!-- Darkmode btn --> */}
+          <DarkMode />
           <div className="nav__toggle" id="nav-toggle">
             <AiOutlineMenu />
           </div>

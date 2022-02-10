@@ -4,7 +4,7 @@ import Header from './Header/Header';
 import Portfolio from './Portfolio/Portfolio';
 import Project from './Project/Project';
 import Qualification from './Qualification/Qualification';
-import Skills from './Skills/Skills';
+import RecentWork from './RecentWork/RecentWork';
 
 export {
   About,
@@ -13,5 +13,5 @@ export {
   Portfolio,
   Project,
   Qualification,
-  Skills,
+  RecentWork,
 }

@@ -5,9 +5,9 @@ import {
   Portfolio,
   Project,
   Qualification,
-  Skills,
+  RecentWork,
 } from "./container";
-import { Navbar, Footer, DarkMode } from "./components";
+import { Navbar, Footer } from "./components";
 import "./App.scss";
 
 
@@ -15,13 +15,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <DarkMode />
       <Header />
       <About />
-      <Skills />
-      <Qualification />
+      <RecentWork />
       <Portfolio />
       <Project />
+      <Qualification />
       <Contact />
       <Footer />
     </div>
