@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { BiHomeAlt, BiBriefcaseAlt2, BiMailSend } from "react-icons/bi";
 import {
@@ -73,10 +73,6 @@ const Navbar = () => {
 
         <div className="nav__btns">
           {/* <!-- Darkmode btn --> */}
-          {/* <FiSun className="change-theme" id="theme-button" />
-          <FiMoon className="change-theme" id="theme-button" /> */}
-
-          
           <div className="nav__toggle" id="nav-toggle">
             <AiOutlineMenu />
           </div>
