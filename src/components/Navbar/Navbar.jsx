@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { BiHomeAlt, BiBriefcaseAlt2, BiMailSend } from "react-icons/bi";
 import {
@@ -8,12 +8,12 @@ import {
   AiOutlineClose,
   AiOutlineMenu,
 } from "react-icons/ai";
-import { FiSun, FiMoon } from "react-icons/fi";
 
 import { images } from "../../constants";
 import "./Navbar.scss";
 
 const Navbar = () => {
+ 
   return (
     <header className="header" id="header">
       <nav className="nav container">
@@ -73,8 +73,10 @@ const Navbar = () => {
 
         <div className="nav__btns">
           {/* <!-- Darkmode btn --> */}
-          <FiSun className="change-theme" id="theme-button" />
-          <FiMoon className="change-theme" id="theme-button" />
+          {/* <FiSun className="change-theme" id="theme-button" />
+          <FiMoon className="change-theme" id="theme-button" /> */}
+
+          
           <div className="nav__toggle" id="nav-toggle">
             <AiOutlineMenu />
           </div>

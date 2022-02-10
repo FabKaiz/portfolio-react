@@ -1,11 +1,21 @@
-import { About, Contact, Header, Portfolio, Project, Qualification, Skills } from './container'
-import { Navbar, Footer } from './components'
-import './App.scss';
+import {
+  About,
+  Contact,
+  Header,
+  Portfolio,
+  Project,
+  Qualification,
+  Skills,
+} from "./container";
+import { Navbar, Footer, DarkMode } from "./components";
+import "./App.scss";
+
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <DarkMode />
       <Header />
       <About />
       <Skills />
