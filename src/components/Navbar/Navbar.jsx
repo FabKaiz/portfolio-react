@@ -65,14 +65,14 @@ const Navbar = () => {
             </li>
 
             <li className="nav__item">
-              <a href="#portfolio" className="nav__link">
+              <a href="#recent-work" className="nav__link">
                 <AiOutlinePicture className="nav__icon" />
                 Projet récent
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="#services" className="nav__link">
+              <a href="#all-projects" className="nav__link">
                 <BiBriefcaseAlt2 className="nav__icon" />
                 Tout mes projets
               </a>
