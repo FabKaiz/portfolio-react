@@ -1,9 +1,9 @@
 import React from 'react'
 import './Button.scss'
 
-const Button = ({ scrollTo, title, logo }) => {
+const Button = ({ href, title, logo }) => {
   return (
-    <a href={scrollTo} className="button">
+    <a href={href} className="button">
       {title} {logo}
     </a>
   )
