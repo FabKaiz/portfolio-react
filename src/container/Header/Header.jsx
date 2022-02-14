@@ -2,20 +2,24 @@ import React from 'react'
 
 import { BsMouse } from 'react-icons/bs'
 import { BiDownArrowAlt, BiSend } from 'react-icons/bi'
+
+import { Button } from '../../components'
 import './Header.scss';
 
 const Header = () => {
   return (
     <section className="home section" id="home">
-      <div className="home__container container grid">
-        <h3>Je suis</h3>
+      <div className="home__container container">
+        <p>Je suis</p>
         <h1>Fabien Chareun</h1>
         <p>Développeur Web Front-end</p>
-        <a href="#contact" className="button button--flex">
-          Me contacter <BiSend />
-        </a>
+        <Button
+          title='Me Contacter'
+          scrollTo='#contact'
+          logo={<BiSend />}
+        />
         <div className="home__scroll">
-          <a href="#about" className="home__scroll-button button--flex">
+          <a href="#about" className="home__scroll-button">
             <BsMouse />
             <span className="home__scroll-name">Scroll-down</span>
             <BiDownArrowAlt />
