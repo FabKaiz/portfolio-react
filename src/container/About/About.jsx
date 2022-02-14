@@ -22,7 +22,7 @@ const About = () => {
             <strong> 9 semaines</strong> à <strong>Le Wagon Lyon</strong> dont
             <strong> 2 semaines de projet en équipe</strong> j'ai obtenu ma
             certification de <strong>concepteur-développeur d’applications web</strong>.
-            Maintenant je souhaite me spécialiser dans le <strong>Front-end</strong>.
+            Je souhaite maintenant me spécialiser dans le <strong>Front-end</strong>.
           </p>
 
           <div className="about__info">

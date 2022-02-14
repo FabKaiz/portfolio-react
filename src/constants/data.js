@@ -1,1 +1,1 @@
-// Here all my recent projects and quelifications
+// Here all my recent projects and qualifications
