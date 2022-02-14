@@ -66,10 +66,7 @@
 }
 
 .nav__close {
-  position: absolute;
-  right: 1.3rem;
-  bottom: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   cursor: pointer;
   color:var(--first-color);
 
@@ -80,12 +77,13 @@
 
 /* show menu */
 .show-menu {
-  bottom: 0;
+  bottom: 0 !important;
 }
 
 .nav__btns {
   margin-left: 2rem;
   display: flex;
+  z-index: 10;
 }
 
 

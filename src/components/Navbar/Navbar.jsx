@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { BiHomeAlt, BiBriefcaseAlt2, BiMailSend } from "react-icons/bi";
 import {
@@ -10,10 +10,16 @@ import {
 } from "react-icons/ai";
 
 import { images } from "../../constants";
-import "./Navbar.scss";
 import { DarkMode } from "../../components";
+import "./Navbar.scss";
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  // When we click on each nav__link, we remove the show-menu class
+  const closeMenu = () => setToggleMenu(false)
+  const navLink = document.querySelectorAll('.nav__link')
+  navLink.forEach(n => n.addEventListener('click', closeMenu))
  
   return (
     <header className="header" id="header">
@@ -24,7 +30,7 @@ const Navbar = () => {
             Fabien
           </div>
         </a>
-        <div className="nav__menu" id="nav-menu">
+        <div className={`nav__menu ${toggleMenu ? 'show-menu' : 'hide-menu'}`} id="nav-menu">
           <ul className="nav__list grid">
             <li className="nav__item">
               <a href="#home" className="nav__link active-link">
@@ -42,7 +48,6 @@ const Navbar = () => {
 
             <li className="nav__item">
               <a href="#portfolio" className="nav__link">
-                <i className="uil uil-scenery nav__icon"></i>
                 <AiOutlinePicture className="nav__icon" />
                 Projet récent
               </a>
@@ -68,15 +73,17 @@ const Navbar = () => {
                 Contact
               </a>
             </li>
-          </ul>
 
-          <AiOutlineClose className="nav__close" id="nav-close" />
+          </ul>
         </div>
 
         <div className="nav__btns">
           <DarkMode />
           <div className="nav__toggle" id="nav-toggle">
-            <AiOutlineMenu />
+            {toggleMenu
+              ? <AiOutlineClose className="nav__close" onClick={() => setToggleMenu(false)} />
+              : <AiOutlineMenu onClick={() => setToggleMenu(true)} />
+            }
           </div>
         </div>
       </nav>
