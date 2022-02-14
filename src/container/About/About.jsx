@@ -28,11 +28,11 @@ const About = () => {
           <div className="about__info">
             <div>
               <span className="about__info-title">20+</span>
-              <span className="about__info-name">Outils utilisés</span>
+              <span className="about__info-name">Outils<br /> utilisés</span>
             </div>
             <div>
               <span className="about__info-title">25+</span>
-              <span className="about__info-name">Projet terminés</span>
+              <span className="about__info-name">Projet<br /> terminés</span>
             </div>
             <div>
               <span className="about__info-title">12+</span>
@@ -40,7 +40,7 @@ const About = () => {
             </div>
           </div>
 
-          <div class="about__buttons">
+          <div className="about__buttons">
             <Button
               href="https://flash-handball-7c5.notion.site/Fabien-Chareun-0534008f12c14f299289e8285c7de2ff"
               target="_blank"
