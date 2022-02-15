@@ -13,12 +13,54 @@
     margin-bottom: 1rem;
   }
 
-  span {
-    font-size: var(--small-font-size);
+  .CSS {
+    background-color: #563D7C;
+    color:  var(--first-color-lighter);
+  }
 
-    padding: 0.5rem;
-    background-color: rgba(117, 117, 117, 0.5);
-    border-radius: 99px;
+  .JavaScript {
+    color: black;
+    background-color: #F1E05A;
+  }
+
+  .HTML {
+    background-color: #E34C26;
+  }
+
+  .Vue {
+    background-color: #41B883;
+  }
+
+  .Shell {
+    background-color: #89E051;
+  }
+
+  .Ruby {
+    background-color: #741F20;
+  }
+}
+
+.repo__language-tag {
+  font-size: var(--small-font-size);
+
+  padding: 0.25rem 1rem;
+  background-color: rgba(117, 117, 117, 0.5);
+  border-radius: 99px;
+}
+
+.repo__buttons {
+  a {
+    color: var(--first-color);
+    transition: .2s ease;
+    
+    &:hover {
+      text-decoration: underline;
+      color: var(--first-color-alt);
+    }
+  }
+
+  a:first-child {
+    margin-right: 1rem;
   }
 }
 

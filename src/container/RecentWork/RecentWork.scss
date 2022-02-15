@@ -1,0 +1,9 @@
+.recent__work-container {
+  display: flex;
+  justify-content: center;
+
+  .repo__content:first-child {
+    margin-right: 3rem;
+  }
+
+}

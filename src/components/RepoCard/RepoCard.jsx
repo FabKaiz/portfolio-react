@@ -1,27 +1,35 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import './RepoCard.scss'
 
-const RepoCard = () => {
+const RepoCard = ({ repo }) => {
+  const languageRef = useRef(repo.language)
+
+  console.log(languageRef)
+
+  if (languageRef.current === 'CSS') {
+
+  }
+   
   return (
-    <div className="repo__container" key={7}>
+    <div className="repo__container">
       <h2 className="repo__title">
-        THE-NAME-OF-REPOSITORY
+        {repo.name.toUpperCase()}
       </h2>
-      <p>This is a simple description of the repository on github</p>
+      <p>{repo.description}</p>
 
       <div className="repo__buttons">
-        <a href='https://github.com/FabKaiz/gerich-restaurant' target="_blank" rel="noreferrer">
+        <a href={repo.html_url} target="_blank" rel="noreferrer">
           Voir le repo
         </a>
-        <a href='https://gerich-restaurant.netlify.app/' target="_blank" rel="noreferrer">
+        <a href={repo.homepage}  target="_blank" rel="noreferrer">
           Voir le site
         </a>
       </div>
 
       <div className="line"></div>
   
-      <span>JavaScript</span>
+      <span className={`repo__language-tag ${languageRef.current}`} ref={languageRef}>{repo.language}</span>
     </div>
   )
 }
