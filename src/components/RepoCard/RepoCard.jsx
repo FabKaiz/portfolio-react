@@ -5,7 +5,7 @@ import './RepoCard.scss'
 const RepoCard = ({ repo }) => {
   const languageRef = useRef(repo.language)
 
-  function capitalizeWords(string) {
+  const capitalizeWords = (string) => {
     // Remove '-' characters of the repo name
     const cleanString = string.replace(/-/g, " ")
     // Return the name with all words capitalized
