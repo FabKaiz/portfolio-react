@@ -28,7 +28,7 @@ const RepoCard = ({ repo }) => {
       </div>
 
       <div className="line"></div>
-  
+
       <span className={`repo__language-tag ${languageRef.current}`} ref={languageRef}>{repo.language}</span>
     </div>
   )
