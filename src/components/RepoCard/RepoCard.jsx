@@ -5,16 +5,17 @@ import './RepoCard.scss'
 const RepoCard = ({ repo }) => {
   const languageRef = useRef(repo.language)
 
-  console.log(languageRef)
-
-  if (languageRef.current === 'CSS') {
-
-  }
+  function capitalizeWords(string) {
+    // Remove '-' characters of the repo name
+    const cleanString = string.replace(/-/g, " ")
+    // Return the name with all words capitalized
+    return cleanString.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+  };
    
   return (
     <div className="repo__container">
       <h2 className="repo__title">
-        {repo.name.toUpperCase()}
+        {capitalizeWords(repo.name)}
       </h2>
       <p>{repo.description}</p>
 
