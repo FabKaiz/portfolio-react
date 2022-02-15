@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import './RecentWork.scss';
+import { RepoCard } from '../../components';
 
 const RecentWork = () => {
   const [repos, setRepos] = useState([])
@@ -45,6 +46,9 @@ const RecentWork = () => {
       <span className="section__subtitle">Mes réalisations récentes</span>
 
       {slicedRepos.map(renderRepo)}
+
+      <RepoCard />
+
       
     </section>
   )
