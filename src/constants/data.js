@@ -103,7 +103,8 @@ const projects = [
     projectSite: 'https://www.chin-up.xyz/',
     projectRepo: 'https://github.com/fannymugnier/chin-up',
     img: images.Port1,
-    codeLanguage: 'Ruby, JavaScript'
+    codeLanguage: 'Ruby, JavaScript',
+    youtubeLink: 'https://www.youtube.com/watch?v=hJlf25bwRkI&list=PLwqwOtDwK_Zar-JrPOEAMDwYRiGay7Xw6&ab_channel=LeWagonLyon'
   },
     {
     id: 11,

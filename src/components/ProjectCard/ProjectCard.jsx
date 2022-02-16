@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { SiFigma, SiGithub } from 'react-icons/si';
+import { BsYoutube } from 'react-icons/bs';
 import { CgWebsite } from 'react-icons/cg';
 import { images } from '../../constants';
 import { Button } from '../../components'
@@ -47,6 +48,17 @@ const ProjectCard = ({ project }) => {
               target="_blank"
               title="Figma"
               logo={<SiFigma />}
+              rel="noreferrer"
+              className="project__btn figma-button"
+            />
+          )}
+
+          {project.youtubeLink && (
+            <Button
+              href={project.youtubeLink}
+              target="_blank"
+              title="Youtube"
+              logo={<BsYoutube />}
               rel="noreferrer"
               className="project__btn figma-button"
             />
