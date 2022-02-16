@@ -105,15 +105,17 @@ const projects = [
     img: images.Port1,
     codeLanguage: 'Ruby, JavaScript'
   },
-  //   {
-  //   id: 11,
-  //   title: '',
-  //   description: ``,
-  //   projectSite: '',
-  //   projectRepo: '',
-  //   img: images.Port10,
-  //   codeLanguage: ''
-  // },
+    {
+    id: 11,
+    title: 'Jeu du Snake 🐍',
+    description: `Le celebre <strong>jeu du Snake</strong> reproduit pendant un de mes
+      cours de JavaScript, en utilisant <strong>uniquement</strong> du vanilla <strong>JavaScript.</strong>
+      Cliquez sur le lien pour l'essayer :)`,
+    projectSite: 'https://fabkaiz.github.io/snake-game-javascript/',
+    projectRepo: 'https://github.com/FabKaiz/snake-game-javascript',
+    img: images.Port4,
+    codeLanguage: ''
+  },
   //   {
   //   id: 12,
   //   title: '',
