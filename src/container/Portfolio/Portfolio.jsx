@@ -4,6 +4,12 @@ import { data } from '../../constants'
 import './Portfolio.scss';
 
 const Portfolio = () => {
+  const renderProject = (project) => (
+    <div className="repo__content" key={project.id}>
+      <ProjectCard repo={project}/>
+    </div>
+  )
+  
   return (
     <section className="portfolio section" id="all-projects">
       <h2 class="section__title">Portfolio</h2>

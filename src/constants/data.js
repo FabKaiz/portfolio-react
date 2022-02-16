@@ -3,6 +3,7 @@ import images from './images';
 
 const projects = [
   {
+    id: 1,
     title: 'Gerich restaurant responsive - React',
     description: `Reproduction d'une maquette Figma d'un restaurant 100% responsive, réalisé avec React.`,
     figmaLink: 'https://www.figma.com/file/yvClSI9AZBRX8UaaGEByF3/Modern-UI%2FUX%3A-Gericht?node-id=53%3A2',
@@ -11,6 +12,7 @@ const projects = [
     img: images.Port14
   },
   {
+    id: 2,
     title: 'Modern UI/UX GPT-3 Website - React',
     description: `Site static reprenant les design modernes des sites web <strong>GPT-3</strong>, Réalisé avec
     <strong>React</strong>`,
