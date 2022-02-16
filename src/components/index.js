@@ -3,6 +3,7 @@ import Navbar from './Navbar/Navbar'
 import DarkMode from './DarkMode/DarkMode'
 import Button from './Button/Button'
 import RepoCard from './RepoCard/RepoCard'
+import ProjectCard from './ProjectCard/ProjectCard'
 
 export {
   Footer,
@@ -10,4 +11,5 @@ export {
   DarkMode,
   Button,
   RepoCard,
+  ProjectCard,
 }
