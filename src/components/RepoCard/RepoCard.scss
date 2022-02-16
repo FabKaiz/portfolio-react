@@ -68,6 +68,25 @@
   height: 1px;
   width: 100%;
   background-color: var(--first-color-lighter);
-  opacity: 0.3;
+  opacity: 0.4;
   margin: 1rem 0;
+}
+
+@media screen and (max-width: 530px) {
+  .repo__container {
+    padding: 1.5rem 2rem;
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .repo__buttons {
+    display: flex;
+    flex-direction: column;
+
+    a:first-child {
+      margin-right: 0;
+      margin-bottom: 0.25rem;
+    }
+  }
 }
