@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-import { SiFigma, SiGithub } from 'react-icons/si'
-import { CgWebsite } from 'react-icons/cg'
-import { images } from '../../constants'
-import './ProjectCard.scss'
+import { SiFigma, SiGithub } from 'react-icons/si';
+import { CgWebsite } from 'react-icons/cg';
+import { images } from '../../constants';
+import { Button } from '../../components'
+import "./ProjectCard.scss";
 
 const ProjectCard = () => {
   return (
@@ -11,34 +12,44 @@ const ProjectCard = () => {
       <img src={images.Port14} alt="screenshot of the website" />
 
       <div className="ProjectCard__content">
-        <h2>Gerich restaurant responsive - React</h2>
+        <h4>Gerich restaurant responsive</h4>
         <p>
           Reproduction d'une maquette Figma d'un restaurant 100% responsive,
           réalisé avec React.
         </p>
 
-        <a href="https://www.figma.com/file/yvClSI9AZBRX8UaaGEByF3/Modern-UI%2FUX%3A-Gericht?node-id=53%3A2" target='_blank'>
-          Voir le figma <SiFigma />
-        </a>
+        <div className="project__buttons">
+          <Button
+            href="https://gerich-restaurant.netlify.app/"
+            target="_blank"
+            title="Site"
+            logo={<CgWebsite />}
+            rel="noreferrer"
+            className="project__btn"
+          />
 
-        <a href="https://gerich-restaurant.netlify.app/" className="project__button-website">
-          Voir le site <CgWebsite />
-        </a>
+          <Button
+            href="https://github.com/FabKaiz/gerich-restaurant"
+            target="_blank"
+            rel="noreferrer"
+            className="project__btn"
+            title="Repo"
+            logo={<SiGithub />}
+          />
 
-        <a href="https://github.com/FabKaiz/gerich-restaurant" className="project__button-github">
-          Voir le repo <SiGithub />
-        </a>
+          <Button
+            href="https://www.figma.com/file/yvClSI9AZBRX8UaaGEByF3/Modern-UI%2FUX%3A-Gericht?node-id=53%3A2"
+            target="_blank"
+            title="Figma"
+            logo={<SiFigma />}
+            rel="noreferrer"
+            className="project__btn figma-button"
+          />
+        </div>
 
-
-      {/* title: 'Gerich restaurant responsive - React',
-      description: `Reproduction d'une maquette Figma d'un restaurant 100% responsive, réalisé avec React.`,
-      figmaLink: 'https://www.figma.com/file/yvClSI9AZBRX8UaaGEByF3/Modern-UI%2FUX%3A-Gericht?node-id=53%3A2',
-      projectSite: 'https://gerich-restaurant.netlify.app/',
-      projectRepo: 'https://github.com/FabKaiz/gerich-restaurant',
-      img: images.Port14 */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

@@ -21,6 +21,9 @@ const Portfolio = () => {
           project.title
         ))} */}
          <ProjectCard />
+         <ProjectCard />
+         <ProjectCard />
+
       </div>
     </section>
   )

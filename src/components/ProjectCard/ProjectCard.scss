@@ -1,0 +1,72 @@
+.ProjectCard__container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+  background-color: var(--container-color);
+  border-radius: 0.5rem;
+  width: 300px;
+  position: relative;
+
+  &:hover {
+    .figma-button {
+      opacity: 0.8;
+    }
+  }
+
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    // margin-bottom: 1rem;
+
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+
+  }
+}
+
+.ProjectCard__content {
+  max-width: 340px;
+  padding: 1rem;
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    font-size: var(--small-font-size);
+  }
+}
+
+.project__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project__btn {
+  width: 120px;
+  padding: 0.5rem 0.5rem;
+
+  svg {
+    transition: 0.4s;
+  }
+
+  &:hover {
+    svg {
+    transform: scale(140%) rotate(360deg);
+    }
+  }
+}
+
+.figma-button {
+  transition: 0.4s;
+  opacity: 0;
+
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
