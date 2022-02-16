@@ -50,7 +50,7 @@ const RecentWork = () => {
               </a>
             </div>
             <div className="line"></div>
-            <span className={`repo__language-tag CSS`} >CSS</span>
+            <span className={`repo__language-tag Vue`} >Vue</span>
           </div>
         </div>
 
@@ -69,7 +69,7 @@ const RecentWork = () => {
               </a>
             </div>
             <div className="line"></div>
-            <span className={`repo__language-tag Vue`} >Vue</span>
+            <span className={`repo__language-tag Ruby`} >Ruby</span>
           </div>
         </div>
 

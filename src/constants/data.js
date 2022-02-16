@@ -11,7 +11,7 @@ const projects = [
     img: images.Port14
   },
   {
-    title: 'Modern UI/UX GPT-3 Website - Reac',
+    title: 'Modern UI/UX GPT-3 Website - React',
     description: `Site static reprenant les design modernes des sites web <strong>GPT-3</strong>, Réalisé avec
     <strong>React</strong>`,
     figmaLink: 'https://www.figma.com/file/lz9lLpFHMxHm2odnwM3R0z/gpt3?node-id=0%3A1',
