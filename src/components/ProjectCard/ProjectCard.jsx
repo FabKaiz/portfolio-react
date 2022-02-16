@@ -6,21 +6,25 @@ import { images } from '../../constants';
 import { Button } from '../../components'
 import "./ProjectCard.scss";
 
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
   return (
     <div className="ProjectCard__container">
-      <img src={images.Port14} alt="screenshot of the website" />
+      <div className="img__container">
+        <img src={project.img} alt="screenshot of the website" />
+      </div>
 
       <div className="ProjectCard__content">
-        <h4>Gerich restaurant responsive</h4>
-        <p>
-          Reproduction d'une maquette Figma d'un restaurant 100% responsive,
-          réalisé avec React.
-        </p>
+        <h4>{project.title}</h4>
+        <div 
+          dangerouslySetInnerHTML={{__html:
+            `<p>${project.description} <strong>${project.codeLanguage}.</strong></p>`
+            }}
+        />
+      </div>
 
         <div className="project__buttons">
           <Button
-            href="https://gerich-restaurant.netlify.app/"
+            href={project.projectSite}
             target="_blank"
             title="Site"
             logo={<CgWebsite />}
@@ -29,7 +33,7 @@ const ProjectCard = () => {
           />
 
           <Button
-            href="https://github.com/FabKaiz/gerich-restaurant"
+            href={project.projectRepo}
             target="_blank"
             rel="noreferrer"
             className="project__btn"
@@ -37,17 +41,19 @@ const ProjectCard = () => {
             logo={<SiGithub />}
           />
 
-          <Button
-            href="https://www.figma.com/file/yvClSI9AZBRX8UaaGEByF3/Modern-UI%2FUX%3A-Gericht?node-id=53%3A2"
-            target="_blank"
-            title="Figma"
-            logo={<SiFigma />}
-            rel="noreferrer"
-            className="project__btn figma-button"
-          />
+          {project.figmaLink && (
+            <Button
+              href={project.figmaLink}
+              target="_blank"
+              title="Figma"
+              logo={<SiFigma />}
+              rel="noreferrer"
+              className="project__btn figma-button"
+            />
+          )}
+
         </div>
 
-      </div>
     </div>
   );
 };

@@ -4,12 +4,19 @@
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
   background-color: var(--container-color);
   border-radius: 0.5rem;
-  width: 300px;
+  max-width: 320px;
+  height: 460px;
   position: relative;
+  overflow: hidden;
 
   &:hover {
     .figma-button {
       opacity: 0.8;
+    }
+    
+    img {
+      transform: scale(110%);
+      clip-path: polygon(0 0,100% 0, 100% 90%, 0 100%);
     }
   }
 
@@ -18,25 +25,28 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 0.5rem;
-    // margin-bottom: 1rem;
-
-    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    border-radius: 0.5rem 0.5rem 0 0;
+    transition: 0.3s;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100.05%);
 
   }
 }
 
 .ProjectCard__content {
-  max-width: 340px;
-  padding: 1rem;
+  padding: 1.5rem 2rem;
 
   h4 {
     margin-bottom: 1rem;
   }
 
   p {
-    margin-bottom: 1.5rem;
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
+    height: 100px;
+
+    a {
+      color: var(--first-color);
+      text-decoration: underline;
+    }
   }
 }
 
@@ -45,6 +55,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   flex-wrap: wrap;
+  padding: 0 2rem 1.5rem;
 }
 
 .project__btn {
@@ -65,7 +76,6 @@
 .figma-button {
   transition: 0.4s;
   opacity: 0;
-
   position: absolute;
   top: 1rem;
   right: 1rem;

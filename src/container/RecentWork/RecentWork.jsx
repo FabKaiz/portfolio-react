@@ -27,7 +27,7 @@ const RecentWork = () => {
   return (
     <section className="recent section" id="recent-work">
       <h2 className="section__title">Projet récent</h2>
-      <span className="section__subtitle">Mes 2 dernieres réalisations</span>
+      <span className="section__subtitle">Mes 2 derniers repo sur GitHub</span>
 
       <div className="recent__work-container">
         {slicedRepos.map(renderRepo)}
