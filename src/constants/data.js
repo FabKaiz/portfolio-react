@@ -191,15 +191,6 @@ const projects = [
   //   img: images.Port10,
   //   codeLanguage: ''
   // },
-//   {
-  //   id: 20,
-  //   title: '',
-  //   description: ``,
-  //   projectSite: '',
-  //   projectRepo: '',
-  //   img: images.Port10,
-  //   codeLanguage: ''
-  // },
 ]
 
 export default { projects };
