@@ -32,15 +32,16 @@ const ProjectCard = ({ project }) => {
             rel="noreferrer"
             className="project__btn"
           />
-
-          <Button
-            href={project.projectRepo}
-            target="_blank"
-            rel="noreferrer"
-            className="project__btn"
-            title="Repo"
-            logo={<SiGithub />}
-          />
+          {project.projectRepo && (
+            <Button
+              href={project.projectRepo}
+              target="_blank"
+              rel="noreferrer"
+              className="project__btn"
+              title="Repo"
+              logo={<SiGithub />}
+            />
+          )}
 
           {project.figmaLink && (
             <Button

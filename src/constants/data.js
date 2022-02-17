@@ -178,7 +178,6 @@ const projects = [
     description: `Clone d'Airbnb où vous pouvez louer une "star du dev" ou de cinéma, fait en équipe
       pour <strong> Le Wagon Lyon</strong>. Codé en`,
     projectSite: 'https://grab-a-star.herokuapp.com/',
-    projectRepo: 'https://github.com/fannymugnier/grab-a-star',
     img: images.Port2,
     codeLanguage: 'Ruby on Rails'
   },
