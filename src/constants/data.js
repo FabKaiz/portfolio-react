@@ -112,7 +112,7 @@ const projects = [
     projectSite: 'https://www.chin-up.xyz/',
     projectRepo: 'https://github.com/fannymugnier/chin-up',
     img: images.Port1,
-    codeLanguage: 'Ruby, JavaScript',
+    codeLanguage: 'Ruby on Rails, JavaScript et Scss',
     youtubeLink: 'https://www.youtube.com/watch?v=hJlf25bwRkI&list=PLwqwOtDwK_Zar-JrPOEAMDwYRiGay7Xw6&ab_channel=LeWagonLyon'
   },
   {
@@ -172,15 +172,16 @@ const projects = [
     img: images.Port3,
     codeLanguage: 'JavaScript'
   },
-//   {
-  //   id: 18,
-  //   title: '',
-  //   description: ``,
-  //   projectSite: '',
-  //   projectRepo: '',
-  //   img: images.Port10,
-  //   codeLanguage: ''
-  // },
+  {
+    id: 18,
+    title: 'Grab a star',
+    description: `Clone d'Airbnb où vous pouvez louer une "star du dev" ou de cinéma, fait en équipe
+      pour <strong> Le Wagon Lyon</strong>. Codé en`,
+    projectSite: 'https://grab-a-star.herokuapp.com/',
+    projectRepo: 'https://github.com/fannymugnier/grab-a-star',
+    img: images.Port2,
+    codeLanguage: 'Ruby on Rails'
+  },
 //   {
   //   id: 19,
   //   title: '',
