@@ -18,6 +18,8 @@ import Port14         from '../assets/port14.jpg';
 import firstPortfolio  from '../assets/firstPortfolio.jpg';
 import foodDelivery   from '../assets/foodDelivery.jpg';
 import memeGenerator   from '../assets/memeGenerator.jpg';
+import barbajsGsap   from '../assets/barbajsGsap.jpg';
+import barbajsCss   from '../assets/barbajsCss.jpg';
 
 export default {
   FCLogo,
@@ -40,4 +42,6 @@ export default {
   firstPortfolio,
   foodDelivery,
   memeGenerator,
+  barbajsGsap,
+  barbajsCss,
 };

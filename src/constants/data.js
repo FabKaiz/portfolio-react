@@ -84,17 +84,26 @@ const projects = [
     img: images.Port9,
     codeLanguage: 'JavaScript, ScrollTrigger, GSAP'
   },
-    {
+  {
+    id: 13,
+    title: 'Barba Galery',
+    description: `Galerie de photos modernes réalisé avec`,
+    projectSite: 'https://barbajs-gsap.netlify.app/',
+    projectRepo: 'https://github.com/FabKaiz/barbajs-101',
+    img: images.barbajsGsap,
+    codeLanguage: 'BarbaJs, GSAP and JavaScript'
+  },
+  {
     id: 9,
     title: 'Furniture agency',
-    description: ` Landing page avec des transitions moderne, réalisé dans le cadre d'un exercise pour Petr Tichy, hôte des 'Website
+    description: `Landing page avec des transitions moderne, réalisé dans le cadre d'un exercise pour Petr Tichy, hôte des 'Website
     Reviews' par <strong>Awwwards</strong>. Fait a l'aide de`,
     projectSite: 'https://fabkaiz.github.io/gsap-slider-office/',
     projectRepo: 'https://github.com/FabKaiz/gsap3-slider-office',
     img: images.Port8,
     codeLanguage: 'JavaScript, GSAP'
   },
-    {
+  {
     id: 10,
     title: 'Chin-up',
     description: `Mon <strong>projet en équipe</strong> pour <strong> Le Wagon Lyon:</strong>
@@ -106,7 +115,7 @@ const projects = [
     codeLanguage: 'Ruby, JavaScript',
     youtubeLink: 'https://www.youtube.com/watch?v=hJlf25bwRkI&list=PLwqwOtDwK_Zar-JrPOEAMDwYRiGay7Xw6&ab_channel=LeWagonLyon'
   },
-    {
+  {
     id: 11,
     title: 'Jeu du Snake 🐍',
     description: `Le celebre <strong>jeu du Snake</strong> reproduit pendant un de mes
@@ -117,17 +126,72 @@ const projects = [
     img: images.Port4,
     codeLanguage: ''
   },
-    {
+  {
     id: 12,
     title: 'Meme generator',
-    description: `Random meme generator using a `,
+    description: `Générateur de meme aléatoire fait avec`,
     projectSite: 'https://fabkaiz.github.io/meme-generator-react/',
     projectRepo: 'https://github.com/FabKaiz/meme-generator-react',
     img: images.memeGenerator,
-    codeLanguage: 'Meme API and React'
+    codeLanguage: 'Meme API et React'
   },
-  //   {
-  //   id: 13,
+  {
+    id: 14,
+    title: 'BarbaJs page transitions',
+    description: `Plusieurs transitions de page réalisé a l'aide de`,
+    projectSite: 'https://barbajs-css.netlify.app/',
+    projectRepo: 'https://github.com/FabKaiz/barbajs-101',
+    img: images.barbajsCss,
+    codeLanguage: 'BarbaJs, Scss et JavaScript'
+  },
+  {
+    id: 15,
+    title: 'Suinnyside agency',
+    description: `Frontend mentor challenges réalisé avec`,
+    figmaLink: 'https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef',
+    projectSite: 'https://sunnyside-vue.web.app/',
+    projectRepo: 'https://github.com/FabKaiz/sunnyside-agency',
+    img: images.Port7,
+    codeLanguage: 'Vue, Scss'
+  },
+  {
+    id: 16,
+    title: 'Find your Coach',
+    description: `Projet réalisé pendant un exercise de`,
+    projectSite: 'https://find-coach-c96a2.web.app/coaches',
+    projectRepo: 'https://github.com/FabKaiz/find-coach-vue',
+    img: images.Port6,
+    codeLanguage: 'VueJS'
+  },
+//   {
+  //   id: 17,
+  //   title: '',
+  //   description: ``,
+  //   projectSite: '',
+  //   projectRepo: '',
+  //   img: images.Port10,
+  //   codeLanguage: ''
+  // },
+//   {
+  //   id: 18,
+  //   title: '',
+  //   description: ``,
+  //   projectSite: '',
+  //   projectRepo: '',
+  //   img: images.Port10,
+  //   codeLanguage: ''
+  // },
+//   {
+  //   id: 19,
+  //   title: '',
+  //   description: ``,
+  //   projectSite: '',
+  //   projectRepo: '',
+  //   img: images.Port10,
+  //   codeLanguage: ''
+  // },
+//   {
+  //   id: 20,
   //   title: '',
   //   description: ``,
   //   projectSite: '',
