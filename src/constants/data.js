@@ -163,15 +163,15 @@ const projects = [
     img: images.Port6,
     codeLanguage: 'VueJS'
   },
-//   {
-  //   id: 17,
-  //   title: '',
-  //   description: ``,
-  //   projectSite: '',
-  //   projectRepo: '',
-  //   img: images.Port10,
-  //   codeLanguage: ''
-  // },
+  {
+    id: 17,
+    title: 'JavaScript components',
+    description: `Page avec plusieurs components realisés en vanilla`,
+    projectSite: 'https://fabkaiz.github.io/Javascript-component/',
+    projectRepo: 'https://github.com/FabKaiz/Javascript-component',
+    img: images.Port3,
+    codeLanguage: 'JavaScript'
+  },
 //   {
   //   id: 18,
   //   title: '',
