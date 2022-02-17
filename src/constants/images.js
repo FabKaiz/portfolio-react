@@ -17,6 +17,7 @@ import Port13         from '../assets/port13.jpg';
 import Port14         from '../assets/port14.jpg';
 import firstPortfolio  from '../assets/firstPortfolio.jpg';
 import foodDelivery   from '../assets/foodDelivery.jpg';
+import memeGenerator   from '../assets/memeGenerator.jpg';
 
 export default {
   FCLogo,
@@ -38,4 +39,5 @@ export default {
   Port14,
   firstPortfolio,
   foodDelivery,
+  memeGenerator,
 };

@@ -55,7 +55,7 @@ const projects = [
   },
   {
     id: 6,
-    title: 'Travel Advisor - React',
+    title: 'Travel Advisor',
     description: `Permet de trouver des hôtels et restaurants autour de vous ou sur la
       ville sélectionné. Ce que j'ai utilisé:`,
     projectSite: 'https://travel-advisor-fabkaiz.netlify.app/',
@@ -117,15 +117,15 @@ const projects = [
     img: images.Port4,
     codeLanguage: ''
   },
-  //   {
-  //   id: 12,
-  //   title: '',
-  //   description: ``,
-  //   projectSite: '',
-  //   projectRepo: '',
-  //   img: images.Port10,
-  //   codeLanguage: ''
-  // },
+    {
+    id: 12,
+    title: 'Meme generator',
+    description: `Random meme generator using a `,
+    projectSite: 'https://fabkaiz.github.io/meme-generator-react/',
+    projectRepo: 'https://github.com/FabKaiz/meme-generator-react',
+    img: images.memeGenerator,
+    codeLanguage: 'Meme API and React'
+  },
   //   {
   //   id: 13,
   //   title: '',
