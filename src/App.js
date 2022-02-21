@@ -19,7 +19,6 @@ function App() {
       <About />
       <RecentWork />
       <Portfolio />
-      <Project />
       <Qualification />
       <Contact />
       <Footer />
