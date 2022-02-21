@@ -7,3 +7,21 @@
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   flex-wrap: wrap;
 }
+
+.carousel__container {
+  padding: 3rem 2rem;
+  position: relative;
+
+
+  .react-multi-carousel-dot button{
+    border-width: 0;
+    background: var(--first-color-lighter);
+    transition: width 0.3s;
+  }
+  .react-multi-carousel-dot--active button {
+    background: var(--first-color);
+    width: 22px;
+    border-radius: 0.5rem;
+  }
+
+}
