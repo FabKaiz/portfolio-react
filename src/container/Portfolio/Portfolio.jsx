@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { ImArrowRight2, ImArrowLeft2 } from 'react-icons/im'
 
 import { ProjectCard } from '../../components';
 import { data } from '../../constants'
@@ -8,24 +9,37 @@ import './Portfolio.scss';
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 3000, min: 2001 },
+    breakpoint: { max: 3000, min: 2400},
     items: 7,
     slidesToSlide: 4,
-
   },
-  desktop: {
-    breakpoint: { max: 2000, min: 1024 },
+  LargeDesktop: {
+    breakpoint: { max: 2399, min: 2001 },
+    items: 6,
+    slidesToSlide: 4,
+  },
+  desktopFullScreen: {
+    breakpoint: { max: 2000, min: 1800 },
     items: 5,
     slidesToSlide: 3,
-
+  },
+  smallerdesktop: {
+    breakpoint: { max: 1799, min: 1380 },
+    items: 4,
+    slidesToSlide: 3,
+  },
+  laptop: {
+    breakpoint: { max: 1379, min: 1065 },
+    items: 3,
+    slidesToSlide: 2,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1
+    breakpoint: { max: 1064, min: 720 },
+    items: 2,
+    slidesToSlide: 2,
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 719, min: 0 },
     items: 1
   }
 };
@@ -48,6 +62,8 @@ const Portfolio = () => {
           <Carousel
             autoPlaySpeed={999999}
             responsive={responsive}
+            customLeftArrow={<ImArrowLeft2 className="carousel__arrow--left" />}
+            customRightArrow={<ImArrowRight2 className="carousel__arrow--right" />}
             showDots={true}
             renderDotsOutside
           >
