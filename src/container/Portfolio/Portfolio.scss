@@ -13,7 +13,6 @@
   position: relative;
   overflow: visible;
 
-
   .react-multi-carousel-dot button{
     border-width: 0;
     background: var(--first-color-lighter);
@@ -56,7 +55,6 @@
   }
 
   .react-multi-carousel-list {
-
     &:active {
       cursor: grabbing;
       cursor: -moz-grabbing;
@@ -69,10 +67,10 @@
   .carousel__container {
     display: flex;
     justify-content: center;
+    padding: 0;
 
     .react-multi-carousel-list {
       width: 460px;
-      padding: 0;
     }
 
     .react-multi-carousel-item {

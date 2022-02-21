@@ -50,28 +50,21 @@ const Portfolio = () => {
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Liste de tout mes projets</span>
 
-      {/* <div className="portfolio__content">
-        {data?.projects.map((project) => (
-          <ProjectCard project={project} key={project.id} />
-        ))}
+      <div className="carousel__container">
+        <Carousel
+          autoPlaySpeed={999999}
+          responsive={responsive}
+          customLeftArrow={<ImArrowLeft2 className="carousel__arrow--left" />}
+          customRightArrow={<ImArrowRight2 className="carousel__arrow--right" />}
+          showDots={true}
+          renderDotsOutside
+        >
+          {data?.projects.map((project) => (
+            <ProjectCard project={project} key={project.id} />
+          ))}
+        </Carousel>
+      </div>
 
-
-      </div> */}
-
-        <div className="carousel__container">
-          <Carousel
-            autoPlaySpeed={999999}
-            responsive={responsive}
-            customLeftArrow={<ImArrowLeft2 className="carousel__arrow--left" />}
-            customRightArrow={<ImArrowRight2 className="carousel__arrow--right" />}
-            showDots={true}
-            renderDotsOutside
-          >
-            {data?.projects.map((project) => (
-              <ProjectCard project={project} key={project.id} />
-            ))}
-          </Carousel>
-        </div>
 
     </section>
   )
