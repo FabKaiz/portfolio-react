@@ -4,6 +4,7 @@ import DarkMode from './DarkMode/DarkMode'
 import Button from './Button/Button'
 import RepoCard from './RepoCard/RepoCard'
 import ProjectCard from './ProjectCard/ProjectCard'
+import QualificationItem from './QualificationItem/QualificationItem'
 
 export {
   Footer,
@@ -12,4 +13,5 @@ export {
   Button,
   RepoCard,
   ProjectCard,
+  QualificationItem,
 }

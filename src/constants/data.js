@@ -275,4 +275,41 @@ const skills = [
   },
 ]
 
-export default { projects, skills };
+const qualification = [
+  {
+    year: 2022,
+    title: 'React',
+    description: 'Bob Ziroll - Scrimba',
+  },
+  {
+    year: 2022,
+    title: 'Practical GreenSock',
+    description: 'Petr Tichy - ihatetomatoes.net',
+    className: 'opacity-0',
+  },
+  {
+    year: 2021,
+    title: 'VueJs 2 & 3',
+    description: 'Maximilian Schwarzmüller & Enzo Ustariz - Udemy',
+  },
+  {
+    year: 2021,
+    title: 'Bien comprendre JavaScript ES6 / ES7',
+    description: 'John Taieb - Udemy',
+    className: 'opacity-0',
+  },
+  {
+    year: 2021,
+    title: 'JavaScript basics',
+    description: 'Chris Sev - Better Dev',
+    className: 'opacity-0',
+  },
+  {
+    year: 2021,
+    title: 'Certification concepteur-développeur d’applications web',
+    description: 'Le Wagon - Lyon',
+    className: 'opacity-0',
+  },
+]
+
+export default { projects, skills, qualification };

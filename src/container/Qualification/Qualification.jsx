@@ -2,7 +2,7 @@ import React from 'react'
 
 import { data } from '../../constants'
 
-
+import { QualificationItem } from '../../components'
 import './Qualification.scss';
 
 
@@ -17,9 +17,9 @@ const Qualification = () => {
 
         <div className="skills__content">
           {data?.skills?.map((skill) => (
-            <div className="skill__item">
+            <div className="skill__item" key={skill.name}>
               <div className="skill__logo">
-                <img src={skill.logo} alt="" />
+                <img src={skill.logo} alt="skill logo" />
                 <p>{skill.name}</p>
               </div>
             </div>
@@ -27,16 +27,16 @@ const Qualification = () => {
         </div>
 
         <div className="qualification__content">
-          <div className="qualification__item">
-            <div className="qualification__year">
-              <h4>2022</h4>
-            </div>
-            <div className="qualification__name">
-              <h4>React</h4>
-              <p>Bob Ziroll - Scrimba</p>
-            </div>
-
-          </div>
+          {data?.qualification?.map((qualification) => (
+            <QualificationItem
+              year={qualification.year}
+              title={qualification.title}
+              description={qualification.description}
+              key={qualification.title}
+              className={qualification.className}
+            />
+          ))}
+          
         </div>
 
       </div>
