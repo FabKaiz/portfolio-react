@@ -1,6 +1,13 @@
 // Here all my recent projects and qualifications
 import images from './images';
 
+import { AiOutlineHtml5 } from 'react-icons/ai'
+import { DiCss3Full, DiRubyRough } from 'react-icons/di'
+import { SiJavascript, SiRubyonrails, SiHeroku, SiNetlify, SiFirebase } from 'react-icons/si'
+import { FaVuejs, FaReact, FaHotjar } from 'react-icons/fa'
+import { HiOutlineDatabase } from 'react-icons/hi'
+import { FiFigma, FiGithub } from 'react-icons/fi'
+
 const projects = [
   {
     id: 1,
@@ -192,4 +199,80 @@ const projects = [
   // },
 ]
 
-export default { projects };
+const skills = [
+  // FRONTEND
+  {
+    id: 1,
+    name: 'HTML',
+    logo: <AiOutlineHtml5 />,
+  },
+  {
+    id: 2,
+    name: 'CSS / SCSS',
+    logo: <DiCss3Full />,
+  },
+  {
+    id: 3,
+    name: 'JavaScript',
+    logo: <SiJavascript />,
+  },
+  {
+    id: 4,
+    name: 'VueJs',
+    logo: <FaVuejs />,
+  },
+  {
+    id: 5,
+    name: 'ReactJs',
+    logo: <FaReact />,
+  },
+  // BACKEND
+  {
+    id: 6,
+    name: 'Ruby',
+    logo: <DiRubyRough />,
+  },
+  {
+    id: 7,
+    name: 'RoR',
+    logo: <SiRubyonrails />,
+  },
+  {
+    id: 8,
+    name: 'DataBase / SQL',
+    logo: <HiOutlineDatabase />,
+  },
+  // TOOLS
+  {
+    id: 9,
+    name: 'Figma',
+    logo: <FiFigma />,
+  },
+  {
+    id: 10,
+    name: 'Heroku',
+    logo: <SiHeroku />,
+  },
+  {
+    id: 11,
+    name: 'Git / GitHub',
+    logo: <FiGithub />,
+  },
+  {
+    id: 12,
+    name: 'Hotjar',
+    logo: <FaHotjar />,
+  },
+  {
+    id: 12,
+    name: 'Firebase',
+    logo: <SiFirebase />,
+  },
+  {
+    id: 12,
+    name: 'Netlify',
+    logo: <SiNetlify />,
+  },
+]
+
+export default { projects, skills };
