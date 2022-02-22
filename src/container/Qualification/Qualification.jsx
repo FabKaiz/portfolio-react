@@ -27,19 +27,15 @@ const Qualification = () => {
         </div>
 
         <div className="qualification__content">
-          <div className="qualification__year">
-            <h5>2022</h5>
-            <h5>2021</h5>
-          </div>
-          <div className="qualification__name">
-            <div>
-              <h5>React</h5>
+          <div className="qualification__item">
+            <div className="qualification__year">
+              <h4>2022</h4>
+            </div>
+            <div className="qualification__name">
+              <h4>React</h4>
               <p>Bob Ziroll - Scrimba</p>
             </div>
-            <div>
-              <h5>Practical GreenSock</h5>
-              <p>Petr Tichy - ihatetomatoes.net</p>
-            </div>
+
           </div>
         </div>
 
