@@ -204,27 +204,27 @@ const skills = [
   {
     id: 1,
     name: 'HTML',
-    logo: <AiOutlineHtml5 />,
+    logo: images.html,
   },
   {
     id: 2,
     name: 'CSS / SCSS',
-    logo: <DiCss3Full />,
+    logo: images.scss,
   },
   {
     id: 3,
     name: 'JavaScript',
-    logo: <SiJavascript />,
+    logo: images.javascript,
   },
   {
     id: 4,
     name: 'VueJs',
-    logo: <FaVuejs />,
+    logo: images.vue,
   },
   {
     id: 5,
     name: 'ReactJs',
-    logo: <FaReact />,
+    logo: images.react,
   },
   // BACKEND
   {
@@ -239,14 +239,14 @@ const skills = [
   },
   {
     id: 8,
-    name: 'DataBase / SQL',
+    name: 'DB / SQL',
     logo: <HiOutlineDatabase />,
   },
   // TOOLS
   {
     id: 9,
     name: 'Figma',
-    logo: <FiFigma />,
+    logo: images.figma,
   },
   {
     id: 10,

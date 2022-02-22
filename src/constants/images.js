@@ -20,6 +20,12 @@ import foodDelivery   from '../assets/foodDelivery.jpg';
 import memeGenerator   from '../assets/memeGenerator.jpg';
 import barbajsGsap   from '../assets/barbajsGsap.jpg';
 import barbajsCss   from '../assets/barbajsCss.jpg';
+import figma from '../assets/figma.png';
+import html from '../assets/html.png';
+import javascript from '../assets/javascript.png';
+import react from '../assets/react.png';
+import sass from '../assets/sass.png';
+import vue from '../assets/vue.png';
 
 export default {
   FCLogo,
@@ -44,4 +50,10 @@ export default {
   memeGenerator,
   barbajsGsap,
   barbajsCss,
+  figma,
+  html,
+  javascript,
+  react,
+  sass,
+  vue,
 };
