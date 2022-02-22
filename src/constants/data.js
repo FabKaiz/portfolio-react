@@ -209,7 +209,7 @@ const skills = [
   {
     id: 2,
     name: 'CSS / SCSS',
-    logo: images.scss,
+    logo: images.sass,
   },
   {
     id: 3,
@@ -230,17 +230,17 @@ const skills = [
   {
     id: 6,
     name: 'Ruby',
-    logo: <DiRubyRough />,
+    logo: images.ruby,
   },
   {
     id: 7,
     name: 'RoR',
-    logo: <SiRubyonrails />,
+    logo: images.rails,
   },
   {
     id: 8,
     name: 'DB / SQL',
-    logo: <HiOutlineDatabase />,
+    logo: images.db,
   },
   // TOOLS
   {
@@ -251,27 +251,27 @@ const skills = [
   {
     id: 10,
     name: 'Heroku',
-    logo: <SiHeroku />,
+    logo: images.heroku,
   },
   {
     id: 11,
     name: 'Git / GitHub',
-    logo: <FiGithub />,
+    logo: images.github,
   },
   {
     id: 12,
     name: 'Hotjar',
-    logo: <FaHotjar />,
+    logo: images.hotjar,
   },
   {
     id: 12,
     name: 'Firebase',
-    logo: <SiFirebase />,
+    logo: images.firebase,
   },
   {
     id: 12,
     name: 'Netlify',
-    logo: <SiNetlify />,
+    logo: images.netlify,
   },
 ]
 

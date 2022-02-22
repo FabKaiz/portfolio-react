@@ -26,6 +26,15 @@ import javascript from '../assets/javascript.png';
 import react from '../assets/react.png';
 import sass from '../assets/sass.png';
 import vue from '../assets/vue.png';
+import db from '../assets/db.png';
+import firebase from '../assets/firebase.png';
+import github from '../assets/github.png';
+import heroku from '../assets/heroku.png';
+import hotjar from '../assets/hotjar.png';
+import netlify from '../assets/netlify.png';
+import RoR from '../assets/RoR.png';
+import ruby from '../assets/ruby.png';
+import rails from '../assets/rails.png';
 
 export default {
   FCLogo,
@@ -56,4 +65,13 @@ export default {
   react,
   sass,
   vue,
+  db,
+  firebase,
+  github,
+  heroku,
+  hotjar,
+  netlify,
+  RoR,
+  ruby,
+  rails,
 };
