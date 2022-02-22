@@ -1,13 +1,10 @@
 import React from 'react'
 
 import { data } from '../../constants'
-
 import { QualificationItem } from '../../components'
 import './Qualification.scss';
 
-
 const Qualification = () => {
-  
   return (
     <section className="qualification section" id="skills">
       <h2 className="section__title">Compétences</h2>
@@ -36,7 +33,6 @@ const Qualification = () => {
               className={qualification.className}
             />
           ))}
-          
         </div>
 
       </div>
