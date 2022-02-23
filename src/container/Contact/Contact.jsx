@@ -3,7 +3,6 @@ import { BiSend } from 'react-icons/bi';
 
 import { HiOutlineLocationMarker, HiOutlinePhone } from 'react-icons/hi';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
-import { Button } from '../../components';
 import './Contact.scss';
 
 const Contact = () => {
