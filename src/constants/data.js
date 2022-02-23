@@ -1,13 +1,6 @@
 // Here all my recent projects and qualifications
 import images from './images';
 
-import { AiOutlineHtml5 } from 'react-icons/ai'
-import { DiCss3Full, DiRubyRough } from 'react-icons/di'
-import { SiJavascript, SiRubyonrails, SiHeroku, SiNetlify, SiFirebase } from 'react-icons/si'
-import { FaVuejs, FaReact, FaHotjar } from 'react-icons/fa'
-import { HiOutlineDatabase } from 'react-icons/hi'
-import { FiFigma, FiGithub } from 'react-icons/fi'
-
 const projects = [
   {
     id: 1,
