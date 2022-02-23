@@ -53,10 +53,83 @@
 
 .contact-button {
   cursor: pointer;
+  border: none;
+
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  font-family: var(--body-font);
   &:hover {
     svg {
        transform: scale(1.1) rotate(0) translateX(10px);
      }
+  }
+}
+
+.error-message,
+.success-message {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.error-message {
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
+
+.success-message {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+}
+
+.email-content {
+  position: relative;
+}
+
+#not-mail {
+  opacity: 0;
+  color: #D8000C;
+  position: absolute;
+  left:  4px;
+  top: -25px;
+}
+
+.error::placeholder {
+  color: #ff4d4d;
+}
+
+@keyframes dongle {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(-10px, 0px);
+  }
+  20% {
+    transform: translate(10px, 0px);
+  }
+  30% {
+    transform: translate(-10px, 0px);
+  }
+  40% {
+    transform: translate(10px, 0px);
+  }
+  50% {
+    transform: translate(-10px, 0px);
+  }
+  60% {
+    transform: translate(10px, 0px);
+  }
+  70% {
+    transform: translate(-10px, 0px);
+  }
+  80% {
+    transform: translate(10px, 0px);
+  }
+  90% {
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }
 

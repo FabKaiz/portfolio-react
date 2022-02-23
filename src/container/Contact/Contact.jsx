@@ -12,31 +12,78 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  const isEmail = () => {
+    let mail = document.getElementById('not-mail');
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    if (email.match(regex)) {
+      mail.style.opacity = 0;
+      return true
+    } else {
+      mail.style.opacity = 1;
+      mail.style.animation = 'dongle 1s';
+      setTimeout(() => {
+        mail.style.animation = 'none';
+      }, 1000);
+      return false;
+    }
+  }
+
+  const failLMessage = () => {
+    const messageDiv = document.querySelector(".form-message")
+    messageDiv.classList.add('error-message');
+    messageDiv.innerHTML = "❌ Merci de remplir tout les champs obligatoires.";
+
+    document.getElementById('name').classList.add('error');
+    document.getElementById('email').classList.add('error');
+    document.getElementById('message').classList.add('error');
+  }
+
+  const successMessage = () => {
+    const messageDiv = document.querySelector(".form-message")
+
+    messageDiv.classList.add('success-message');
+    messageDiv.innerHTML = '✔️ Message envoyé avec succès !';
+
+    document.getElementById('name').classList.remove('error');
+    document.getElementById('email').classList.remove('error');
+    document.getElementById('message').classList.remove('error');
+
+    setTimeout(() => {
+      messageDiv.style.opacity = 0;
+    }, 5000);
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    sendFeedback("template_c5lf74b", {
-      name,
-      subject,
-      email,
-      message,
-    });
+    if (name && isEmail() && message) {
+      sendFeedback("template_c5lf74b", {
+        name,
+        subject,
+        email,
+        message,
+      });
+    } else {
+      failLMessage()
+    }
   };
 
   const sendFeedback = (templateId, variables) => {
     window.emailjs
       .send("service_ryoqa0c", templateId, variables)
       .then((res) => {
-        console.log("success !");
+        successMessage()
         setName("");
         setSubject("");
         setEmail("");
         setMessage("");
       })
       .catch((err) => {
-        console.log(err);
-        document.querySelector(".form-message").innerHTML =
-          "Une erreur s'est produite, veuillez réessayer.";
+        const messageDiv = document.querySelector(".form-message")
+        messageDiv.classList.add('error-message');
+        messageDiv.innerHTML =
+          "❌ Une erreur s'est produite, veuillez réessayer.";
       });
   };
 
@@ -88,7 +135,6 @@ const Contact = () => {
                   />
                 </div>
                 <div className="email-content contact__content">
-                  <label id="not-mail">Email non valide</label>
                   <input
                     type="mail"
                     id="email"
@@ -99,6 +145,7 @@ const Contact = () => {
                     autoComplete="off"
                     className="contact__input"
                   />
+                  <label id="not-mail">*Email non valide</label>
                 </div>
               </div>
               <div className="contact__content">
@@ -123,14 +170,14 @@ const Contact = () => {
                   rows="7"
                 />
               </div>
-            <input
-              className="button contact-button"
-              type="button"
-              value="Envoyer"
-              title="Envoyer"
-              logo={<BiSend />}
-              onClick={handleSubmit}
-            />
+              <button
+                className="button contact-button"
+                type="button"
+                value="Envoyer"
+                onClick={handleSubmit}
+              >
+                Envoyer <BiSend />
+              </button>
             <div className="form-message"></div>
           </form>
         </div>
