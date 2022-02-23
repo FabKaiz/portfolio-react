@@ -24,11 +24,10 @@ const Contact = () => {
   };
 
   const sendFeedback = (templateId, variables) => {
-
     window.emailjs
       .send("gmail", templateId, variables)
       .then((res) => {
-        console.log('success !');
+        console.log("success !");
         setName("");
         setSubject("");
         setEmail("");
@@ -36,8 +35,9 @@ const Contact = () => {
       })
       .catch(
         (err) =>
-          document.querySelector('.form-message').innerHTML =
+          (document.querySelector(".form-message").innerHTML =
             "Une erreur s'est produite, veuillez réessayer.")
+      );
   };
 
   
@@ -81,7 +81,7 @@ const Contact = () => {
                     id="name"
                     name="name"
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="nom *"
+                    placeholder="Nom complet *"
                     value={name}
                     autoComplete="off"
                     className="contact__input"
@@ -94,7 +94,7 @@ const Contact = () => {
                     id="email"
                     name="email"
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="email *"
+                    placeholder="Email *"
                     value={email}
                     autoComplete="off"
                     className="contact__input"
@@ -117,9 +117,10 @@ const Contact = () => {
                   id="message"
                   name="message"
                   onChange={(e) => setMessage(e.target.value)}
-                  placeholder="message *"
+                  placeholder="Message *"
                   value={message}
-                  className="contact__input"
+                  className="contact__input" 
+                  rows="7"
                 />
               </div>
             <Button
