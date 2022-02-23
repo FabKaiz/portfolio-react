@@ -15,7 +15,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    sendFeedback("***TEMPLAYE_ID***", {
+    sendFeedback("template_c5lf74b", {
       name,
       subject,
       email,
@@ -25,7 +25,7 @@ const Contact = () => {
 
   const sendFeedback = (templateId, variables) => {
     window.emailjs
-      .send("gmail", templateId, variables)
+      .send("service_ryoqa0c", templateId, variables)
       .then((res) => {
         console.log("success !");
         setName("");
@@ -33,11 +33,11 @@ const Contact = () => {
         setEmail("");
         setMessage("");
       })
-      .catch(
-        (err) =>
-          (document.querySelector(".form-message").innerHTML =
-            "Une erreur s'est produite, veuillez réessayer.")
-      );
+      .catch((err) => {
+        console.log(err);
+        document.querySelector(".form-message").innerHTML =
+          "Une erreur s'est produite, veuillez réessayer.";
+      });
   };
 
   
@@ -123,8 +123,8 @@ const Contact = () => {
                   rows="7"
                 />
               </div>
-            <Button
-              className="contact-button"
+            <input
+              className="button contact-button"
               type="button"
               value="Envoyer"
               title="Envoyer"
