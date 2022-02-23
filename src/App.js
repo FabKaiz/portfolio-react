@@ -3,7 +3,6 @@ import {
   Contact,
   Header,
   Portfolio,
-  Project,
   Qualification,
   RecentWork,
 } from "./container";
