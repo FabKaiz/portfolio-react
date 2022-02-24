@@ -5,8 +5,8 @@ import './Footer.scss';
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer__container footer__bg grid">
+    <footer className="dark__bg">
+      <div className="footer__container grid">
 
         <div className="footer__name">
           <h1 className="footer__title">Fabien</h1>
@@ -40,7 +40,9 @@ const Footer = () => {
           </a>
         </div>
 
+
       </div>
+        <p className="footer__copyright">&#169; Fabien Chareun - 2022</p>
     </footer>
   )
 }
