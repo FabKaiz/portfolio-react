@@ -15,6 +15,7 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
   // When we click on each nav__link, we remove the show-menu class on mobile
   const closeMenu = () => setToggleMenu(false)
@@ -38,9 +39,16 @@ const Navbar = () => {
     })
   }
   window.addEventListener('scroll', scrollActive)
+
+  const addShadowToNavbar = () => {
+    window.scrollY >= 80 ? setNavbar(true) : setNavbar(false);
+  }
+
+  window.addEventListener('scroll', addShadowToNavbar)
+
  
   return (
-    <header className="header" id="header">
+    <header className={navbar ? "header scroll-header" : "header"} id="header">
       <nav className="nav container">
         <a href="#home" className="nav__logo">
           <div className="nav__logo-container">
