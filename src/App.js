@@ -6,7 +6,7 @@ import {
   Qualification,
   RecentWork,
 } from "./container";
-import { Navbar, Footer } from "./components";
+import { Navbar, Footer, ParticleBackground } from "./components";
 import "./App.scss";
 
 
@@ -15,6 +15,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
+      <ParticleBackground />
       <About />
       <RecentWork />
       <Portfolio />

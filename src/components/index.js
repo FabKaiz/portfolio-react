@@ -5,6 +5,7 @@ import Button from './Button/Button'
 import RepoCard from './RepoCard/RepoCard'
 import ProjectCard from './ProjectCard/ProjectCard'
 import QualificationItem from './QualificationItem/QualificationItem'
+import ParticleBackground from './ParticleBackground/ParticleBackground'
 
 export {
   Footer,
@@ -14,4 +15,5 @@ export {
   RepoCard,
   ProjectCard,
   QualificationItem,
+  ParticleBackground,
 }

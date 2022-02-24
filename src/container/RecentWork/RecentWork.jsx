@@ -7,14 +7,14 @@ import { RepoCard } from '../../components';
 const RecentWork = () => {
   const [repos, setRepos] = useState([])
 
-  // useEffect(() => {
-  //     axios({
-  //       method: 'GET',
-  //       url: 'https://api.github.com/users/fabkaiz/repos?sort=updated'
-  //     }).then(res => {
-  //       setRepos(res.data)
-  //     })
-  // }, []);
+  useEffect(() => {
+      axios({
+        method: 'GET',
+        url: 'https://api.github.com/users/fabkaiz/repos?sort=updated'
+      }).then(res => {
+        setRepos(res.data)
+      })
+  }, []);
 
   const slicedRepos= repos.slice(0, 2);
 
@@ -34,7 +34,7 @@ const RecentWork = () => {
       </div>
 
       {/* SOLID DATA FOR DEV ONLY */}
-      <div className="recent__work-container">
+      {/* <div className="recent__work-container">
         <div className="repo__content">
           <div className="repo__container">
             <h2 className="repo__title">
@@ -73,7 +73,7 @@ const RecentWork = () => {
           </div>
         </div>
 
-      </div>
+      </div> */}
 
 
     </section>

@@ -4,6 +4,9 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  position: relative;
+  z-index: 10;
+  user-select: none;
 
   h1 {
     font-size: 8rem;
