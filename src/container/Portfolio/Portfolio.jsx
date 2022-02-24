@@ -48,9 +48,9 @@ const Portfolio = () => {
   const CustomLeftArrow = ({ onClick }) => (
     <ImArrowLeft2 onClick={() => onClick()} className="custom-left-arrow carousel__arrow--left" />
   );
-  const CustomRightArrow = ({ onClick }) => {
-    return <ImArrowRight2 className="custom-right-arrow carousel__arrow--right" onClick={() => onClick()} />;
-  };
+  const CustomRightArrow = ({ onClick }) => (
+    <ImArrowRight2 className="custom-right-arrow carousel__arrow--right" onClick={() => onClick()} />
+  );
   return (
     <section className="portfolio section dark__bg" id="all-projects">
       <h2 className="section__title">Portfolio</h2>
