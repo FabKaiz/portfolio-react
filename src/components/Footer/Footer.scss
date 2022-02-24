@@ -13,8 +13,6 @@ footer {
   justify-content: space-between;
   margin: 0 4rem;
   color: #fff;
-
-  // grid-template-columns: repeat(3, 1fr);
 }
 
 .footer__title {
@@ -64,4 +62,30 @@ footer {
   text-align: center;
   color: var(--text-color-light);
   margin-top: var(--mb-3);
+}
+
+@media screen and (max-width: 900px) {
+  .footer__links {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .footer__socials {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 2rem;
+  }
+  .footer__socials {
+    flex-direction: row;
+  }
 }
