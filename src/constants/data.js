@@ -44,6 +44,16 @@ const projects = [
     codeLanguage: 'HTML, CSS, JavaScript'
   },
   {
+    id: 19,
+    title: 'Analytics app',
+    description: `Landing page d'une application d'analytique 100% responsive codé avec`,
+    projectSite: 'https://analytics-landing-react.netlify.app/',
+    projectRepo: 'https://github.com/FabKaiz/analytics-landing-react',
+    figmaLink: 'https://www.figma.com/file/K8RIvVtJKHdXIqjpAPe97y/Analytics-%E2%80%94-Landing-Page-Design',
+    img: images.analytics,
+    codeLanguage: 'React et Scss'
+  },
+  {
     id: 5,
     title: 'Responsive food delivery app',
     description: `Landing page of a food delivery app`,
@@ -181,7 +191,7 @@ const projects = [
     img: images.Port2,
     codeLanguage: 'Ruby on Rails'
   },
-//   {
+  //   {
   //   id: 19,
   //   title: '',
   //   description: ``,
