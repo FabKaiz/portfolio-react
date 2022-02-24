@@ -45,6 +45,12 @@ const responsive = {
 };
 
 const Portfolio = () => {
+  const CustomLeftArrow = ({ onClick }) => (
+    <ImArrowLeft2 onClick={() => onClick()} className="custom-left-arrow carousel__arrow--left" />
+  );
+  const CustomRightArrow = ({ onClick }) => {
+    return <ImArrowRight2 className="custom-right-arrow carousel__arrow--right" onClick={() => onClick()} />;
+  };
   return (
     <section className="portfolio section dark__bg" id="all-projects">
       <h2 className="section__title">Portfolio</h2>
@@ -54,8 +60,8 @@ const Portfolio = () => {
         <Carousel
           autoPlaySpeed={999999}
           responsive={responsive}
-          customLeftArrow={<ImArrowLeft2 className="carousel__arrow--left" />}
-          customRightArrow={<ImArrowRight2 className="carousel__arrow--right" />}
+          customLeftArrow={<CustomLeftArrow />}
+          customRightArrow={<CustomRightArrow />}
           showDots={true}
           renderDotsOutside
         >
