@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsGithub, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
 import './Footer.scss';
 
@@ -25,17 +26,17 @@ const Footer = () => {
         </ul>
 
         <div className="footer__socials">
-          <a href="https://www.instagram.com/fab_citron" target="_blank" class="footer__social">
-            <i class="uil uil-instagram-alt"></i>
+          <a href="https://www.instagram.com/fab_citron" target="_blank" rel="noreferrer">
+            <BsInstagram />
           </a>
-          <a href="https://twitter.com/ChareunFabien" target="_blank" class="footer__social">
-            <i class="uil uil-twitter"></i>
+          <a href="https://twitter.com/ChareunFabien" target="_blank" rel="noreferrer">
+            <BsTwitter />
           </a>
-          <a href="https://github.com/FabKaiz" target="_blank" class="footer__social">
-            <i class="uil uil-github"></i>
+          <a href="https://github.com/FabKaiz" target="_blank" rel="noreferrer">
+            <BsGithub />
           </a>
-          <a href="https://www.linkedin.com/in/fabien-chareun/" target="_blank" class="footer__social">
-            <i class="uil uil-linkedin"></i>
+          <a href="https://www.linkedin.com/in/fabien-chareun/" target="_blank" rel="noreferrer">
+            <BsLinkedin />
           </a>
         </div>
 
