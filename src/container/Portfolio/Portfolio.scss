@@ -1,3 +1,12 @@
+.portfolio {
+  padding-top: 2rem;
+  margin-top: 4rem;
+
+  .section__subtitle {
+    color: #ffffffbd;
+  }
+}
+
 .portfolio__content {
   padding: 0 5rem;
   display: grid;
@@ -18,7 +27,7 @@
     transition: width 0.3s;
   }
   .react-multi-carousel-dot--active button {
-    background: var(--first-color);
+    background: var(--first-color-alt);
     width: 22px;
     border-radius: 0.5rem;
   }
@@ -34,14 +43,15 @@
     cursor: pointer;
     height: 40px;
     width: 40px;
-    transition: background-color 0.2s;
-    background-color: hsla(var(--hue-color), 69%, 61%, 0.5);
+    transition: 0.2s;
+    color: hsla(var(--hue-color), 69%, 61%, 1);
+    background-color: #ffffffc9;
     padding: 0.5rem 0.5rem;
     border-radius: 0.5rem;
-    color: #ffffffc9;
 
     &:hover {
       background-color: hsla(var(--hue-color), 69%, 61%, 1);
+      color: #ffffffc9;
     }
   }
 

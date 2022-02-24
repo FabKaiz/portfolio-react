@@ -46,7 +46,7 @@ const responsive = {
 
 const Portfolio = () => {
   return (
-    <section className="portfolio section" id="all-projects">
+    <section className="portfolio section dark__bg" id="all-projects">
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Liste de tout mes projets</span>
 
@@ -64,7 +64,6 @@ const Portfolio = () => {
           ))}
         </Carousel>
       </div>
-
 
     </section>
   )
