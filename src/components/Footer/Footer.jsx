@@ -40,7 +40,6 @@ const Footer = () => {
           </a>
         </div>
 
-
       </div>
         <p className="footer__copyright">&#169; Fabien Chareun - 2022</p>
     </footer>
