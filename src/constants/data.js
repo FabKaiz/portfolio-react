@@ -38,7 +38,7 @@ const projects = [
     id: 4,
     title: 'Mon ancien portfolio',
     description: `Mon premier portfolio, réalisé avec`,
-    projectSite: 'https://fabien-chareun.com/',
+    projectSite: 'https://fabienchareun.com/',
     projectRepo: 'https://github.com/FabKaiz/portfolio1',
     img: images.firstPortfolio,
     codeLanguage: 'HTML, CSS, JavaScript'
