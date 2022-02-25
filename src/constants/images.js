@@ -37,6 +37,7 @@ import ruby from '../assets/ruby.png';
 import rails from '../assets/rails.png';
 import analytics from '../assets/analytics.jpg';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   FCLogo,
   FCLogoFinal,

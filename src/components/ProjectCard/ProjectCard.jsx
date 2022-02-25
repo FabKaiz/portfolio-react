@@ -3,7 +3,6 @@ import React from 'react';
 import { SiFigma, SiGithub } from 'react-icons/si';
 import { BsYoutube } from 'react-icons/bs';
 import { CgWebsite } from 'react-icons/cg';
-import { images } from '../../constants';
 import { Button } from '../../components'
 import "./ProjectCard.scss";
 
