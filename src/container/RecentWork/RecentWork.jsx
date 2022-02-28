@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import { motion } from 'framer-motion';
 
 import './RecentWork.scss';
 import { RepoCard } from '../../components';
@@ -23,17 +24,30 @@ const RecentWork = () => {
       <RepoCard repo={repo}/>
     </div>
   )
-  
+
+  const appearing = {
+    whileInView: { opacity: [0, 1] },
+    transition: { duration: 1 }
+  };
+
   return (
-    <section className="recent section" id="recent-work">
+    <motion.section
+      className="recent section"
+      id="recent-work"
+      variants={appearing}
+      whileInView={appearing.whileInView}
+      transition={{  delay: 0.3, duration: 1 }}
+    >
       <h2 className="section__title">Projet récent</h2>
-      <span className="section__subtitle">Mes 2 dernières contributions sur GitHub</span>
+      <span className="section__subtitle">
+        Mes 2 dernières contributions sur GitHub
+      </span>
 
       <div className="recent__work-container">
         {slicedRepos.map(renderRepo)}
       </div>
-    </section>
-  )
+    </motion.section>
+  );
 }
 
 export default RecentWork
