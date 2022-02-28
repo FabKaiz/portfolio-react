@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { BiSend } from 'react-icons/bi';
+import { motion } from 'framer-motion';
 
 import { HiOutlineLocationMarker, HiOutlinePhone } from 'react-icons/hi';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
@@ -93,97 +94,121 @@ const Contact = () => {
       <span className="section__subtitle">Fabien Chareun</span>
 
       <div className="contact__container grid">
-
         <div className="contact__info">
-          <div className="contact__info-item">
+          <motion.div
+            whileInView={{ y: [50, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
+            className="contact__info-item"
+          >
             <HiOutlinePhone />
             <div>
               <h3 className="contact__title">Téléphone</h3>
               <span className="contact__subtitle">+33 6 21 71 16 70</span>
             </div>
-          </div>
-          <div className="contact__info-item">
+          </motion.div>
+          <motion.div
+            whileInView={{ y: [50, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
+            className="contact__info-item"
+          >
             <MdOutlineAlternateEmail />
             <div>
               <h3 className="contact__title">Email</h3>
               <span className="contact__subtitle">fabienchareun@gmail.com</span>
             </div>
-          </div>
-          <div className="contact__info-item">
-           <HiOutlineLocationMarker />
+          </motion.div>
+          <motion.div
+            whileInView={{ y: [50, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
+            className="contact__info-item"
+          >
+            <HiOutlineLocationMarker />
             <div>
               <h3 className="contact__title">Localisation</h3>
-              <span className="contact__subtitle">Saint Laurent de mure 69720 - (30km de Lyon)</span>
+              <span className="contact__subtitle">
+                Saint Laurent de mure 69720 - (30km de Lyon)
+              </span>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         <div className="contact__form">
           <form className="contact-form grid">
-              <div className="contact__inputs grid">
-                <div className="contact__content">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="Nom complet *"
-                    value={name}
-                    autoComplete="off"
-                    className="contact__input"
-                  />
-                </div>
-                <div className="email-content contact__content">
-                  <input
-                    type="mail"
-                    id="email"
-                    name="email"
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Email *"
-                    value={email}
-                    autoComplete="off"
-                    className="contact__input"
-                  />
-                  <label id="not-mail">*Email non valide</label>
-                </div>
-              </div>
+            <motion.div
+              whileInView={{ y: [50, 0], opacity: [0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="contact__inputs grid"
+            >
               <div className="contact__content">
                 <input
                   type="text"
-                  id="subject"
-                  name="subject"
-                  onChange={(e) => setSubject(e.target.value)}
-                  placeholder="Sujet"
-                  value={subject}
+                  id="name"
+                  name="name"
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Nom complet *"
+                  value={name}
+                  autoComplete="off"
                   className="contact__input"
                 />
               </div>
-              <div className="contact__content">
-                <textarea
-                  id="message"
-                  name="message"
-                  onChange={(e) => setMessage(e.target.value)}
-                  placeholder="Message *"
-                  value={message}
-                  className="contact__input" 
-                  rows="7"
+              <div className="email-content contact__content">
+                <input
+                  type="mail"
+                  id="email"
+                  name="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Email *"
+                  value={email}
+                  autoComplete="off"
+                  className="contact__input"
                 />
+                <label id="not-mail">*Email non valide</label>
               </div>
-              <button
-                className="button contact-button"
-                type="button"
-                value="Envoyer"
-                onClick={handleSubmit}
-              >
-                Envoyer <BiSend />
-              </button>
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [50, 0], opacity: [0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="contact__content"
+            >
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                onChange={(e) => setSubject(e.target.value)}
+                placeholder="Sujet"
+                value={subject}
+                className="contact__input"
+              />
+            </motion.div>
+            <motion.div
+              whileInView={{ y: [50, 0], opacity: [0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="contact__content"
+            >
+              <textarea
+                id="message"
+                name="message"
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Message *"
+                value={message}
+                className="contact__input"
+                rows="7"
+              />
+            </motion.div>
+            <button
+              className="button contact-button"
+              type="button"
+              value="Envoyer"
+              onClick={handleSubmit}
+            >
+              Envoyer <BiSend />
+            </button>
             <div className="form-message"></div>
           </form>
         </div>
       </div>
-
     </section>
-  )
+  );
 }
 
 export default Contact
