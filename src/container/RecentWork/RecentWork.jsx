@@ -26,7 +26,7 @@ const RecentWork = () => {
   )
 
   const appearing = {
-    whileInView: { opacity: [0, 1] },
+    whileInView: { y: [50, 0], opacity: [0, 1] },
     transition: { duration: 1 }
   };
 
