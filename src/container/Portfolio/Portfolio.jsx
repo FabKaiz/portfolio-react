@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { ImArrowRight2, ImArrowLeft2 } from 'react-icons/im'
+import { motion } from 'framer-motion';
 
 import { ProjectCard } from '../../components';
 import { data } from '../../constants'
@@ -51,9 +52,20 @@ const CustomRightArrow = ({ onClick }) => (
   <ImArrowRight2 className="custom-right-arrow carousel__arrow--right" onClick={() => onClick()} />
 );
 
+const appearing = {
+  whileInView: { opacity: [0, 1] },
+  transition: { duration: 1 }
+};
+
 const Portfolio = () => {
   return (
-    <section className="portfolio section dark__bg" id="all-projects">
+    <motion.section
+      variants={appearing}
+      whileInView={appearing.whileInView}
+      transition={{ delay: 0.3, duration: 1 }}
+      className="portfolio section dark__bg"
+      id="all-projects"
+    >
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Liste de tout mes projets</span>
 
@@ -71,9 +83,8 @@ const Portfolio = () => {
           ))}
         </Carousel>
       </div>
-
-    </section>
-  )
+    </motion.section>
+  );
 }
 
 export default Portfolio
