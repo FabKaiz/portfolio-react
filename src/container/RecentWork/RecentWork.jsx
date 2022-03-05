@@ -36,6 +36,7 @@ const RecentWork = () => {
       id="recent-work"
       variants={appearing}
       whileInView={appearing.whileInView}
+      viewport={{ once: true }}
       transition={{  delay: 0.3, duration: 1 }}
     >
       <h2 className="section__title">Projet récent</h2>

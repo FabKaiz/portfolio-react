@@ -62,6 +62,7 @@ const Portfolio = () => {
     <motion.section
       variants={appearing}
       whileInView={appearing.whileInView}
+      viewport={{ once: true }}
       transition={{ delay: 0.3, duration: 1 }}
       className="portfolio section dark__bg"
       id="all-projects"

@@ -18,6 +18,7 @@ const Qualification = () => {
           {data?.skills?.map((skill) => (
             <motion.div
               whileInView={{ y: [50, 0], opacity: [0, 1] }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5 }}
               className="skill__item"
               key={skill.name}
@@ -34,6 +35,7 @@ const Qualification = () => {
           {data?.qualification?.map((qualification) => (
             <motion.div
               whileInView={{ y: [50, 0], opacity: [0, 1] }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
               <QualificationItem

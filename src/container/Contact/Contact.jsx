@@ -97,6 +97,7 @@ const Contact = () => {
         <div className="contact__info">
           <motion.div
             whileInView={{ y: [50, 0], opacity: [0, 1] }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className="contact__info-item"
           >
@@ -108,6 +109,7 @@ const Contact = () => {
           </motion.div>
           <motion.div
             whileInView={{ y: [50, 0], opacity: [0, 1] }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className="contact__info-item"
           >
@@ -119,6 +121,7 @@ const Contact = () => {
           </motion.div>
           <motion.div
             whileInView={{ y: [50, 0], opacity: [0, 1] }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className="contact__info-item"
           >
@@ -136,6 +139,7 @@ const Contact = () => {
           <form className="contact-form grid">
             <motion.div
               whileInView={{ y: [50, 0], opacity: [0, 1] }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5 }}
               className="contact__inputs grid"
             >
@@ -167,6 +171,7 @@ const Contact = () => {
             </motion.div>
             <motion.div
               whileInView={{ y: [50, 0], opacity: [0, 1] }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5 }}
               className="contact__content"
             >
@@ -182,6 +187,7 @@ const Contact = () => {
             </motion.div>
             <motion.div
               whileInView={{ y: [50, 0], opacity: [0, 1] }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5 }}
               className="contact__content"
             >

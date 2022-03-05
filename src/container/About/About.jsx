@@ -25,6 +25,7 @@ const About = () => {
         <motion.img
           variants={slideFromLeft}
           whileInView={slideFromLeft.whileInView}
+          viewport={{ once: true }}
           src={images.meAbout}
           alt="me at le wagon"
           className="about__img"
@@ -33,6 +34,7 @@ const About = () => {
         <motion.div
           variants={slideFromRight}
           whileInView={slideFromRight.whileInView}
+          viewport={{ once: true }}
           className="about__content"
         >
           <p>

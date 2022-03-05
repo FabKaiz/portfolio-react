@@ -21,6 +21,7 @@ const Header = () => {
             variants={slideFromRight}
             whileInView={slideFromRight.whileInView}
             transition={{  duration: 1 }}
+            viewport={{ once: true }}
             >
             Je suis
           </motion.p>
@@ -28,6 +29,7 @@ const Header = () => {
             variants={slideFromRight}
             whileInView={slideFromRight.whileInView}
             transition={{  delay: 0.6, duration: 1 }}
+            viewport={{ once: true }}
           >
             Fabien Chareun
           </motion.h1>
@@ -35,6 +37,7 @@ const Header = () => {
             variants={slideFromRight}
             whileInView={slideFromRight.whileInView}
             transition={{  delay: 1.4, duration: 0.8 }}
+            viewport={{ once: true }}
           >
             Développeur Web Front-end
           </motion.p>
