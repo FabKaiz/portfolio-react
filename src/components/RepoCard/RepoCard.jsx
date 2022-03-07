@@ -23,9 +23,12 @@ const RepoCard = ({ repo }) => {
         <a href={repo.html_url} target="_blank" rel="noreferrer">
           Voir le repo
         </a>
-        <a href={repo.homepage} target="_blank" rel="noreferrer">
-          Voir le site
-        </a>
+        {repo.homepage && (
+          <a href={repo.homepage} target="_blank" rel="noreferrer">
+            Voir le site
+          </a>
+        )}
+        
       </div>
 
       <div className="line"></div>
