@@ -37,6 +37,7 @@ const Qualification = () => {
               whileInView={{ y: [50, 0], opacity: [0, 1] }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
+              key={qualification.title}
             >
               <QualificationItem
                 year={qualification.year}
