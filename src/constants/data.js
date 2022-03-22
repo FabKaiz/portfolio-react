@@ -11,7 +11,15 @@ const projects = [
     projectRepo: 'https://github.com/FabKaiz/gerich-restaurant',
     img: images.Port14,
     codeLanguage: 'React'
-
+  },
+  {
+    id: 20,
+    title: 'Mini jeux JavaScript',
+    description: `Mini jeux avec le minimun de style fait avec du`,
+    projectSite: 'https://javascript-minigames.netlify.app/',
+    projectRepo: 'https://github.com/FabKaiz/javascript-games',
+    img: images.JavaScriptGame,
+    codeLanguage: 'vanilla JavaScript'
   },
   {
     id: 2,
@@ -192,7 +200,7 @@ const projects = [
     codeLanguage: 'Ruby on Rails'
   },
   //   {
-  //   id: 19,
+  //   id: 20,
   //   title: '',
   //   description: ``,
   //   projectSite: '',
