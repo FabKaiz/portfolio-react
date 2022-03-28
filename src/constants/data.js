@@ -3,6 +3,15 @@ import images from './images';
 
 const projects = [
   {
+    id: 20,
+    title: 'Mini jeux JavaScript',
+    description: `Mini jeux avec le minimun de style fait avec du`,
+    projectSite: 'https://javascript-minigames.netlify.app/',
+    projectRepo: 'https://github.com/FabKaiz/javascript-games',
+    img: images.JavaScriptGame,
+    codeLanguage: 'vanilla JavaScript'
+  },
+  {
     id: 1,
     title: 'Gerich restaurant responsive',
     description: `Reproduction d'une maquette Figma d'un restaurant 100% responsive, réalisé avec`,
@@ -11,15 +20,6 @@ const projects = [
     projectRepo: 'https://github.com/FabKaiz/gerich-restaurant',
     img: images.Port14,
     codeLanguage: 'React'
-  },
-  {
-    id: 20,
-    title: 'Mini jeux JavaScript',
-    description: `Mini jeux avec le minimun de style fait avec du`,
-    projectSite: 'https://javascript-minigames.netlify.app/',
-    projectRepo: 'https://github.com/FabKaiz/javascript-games',
-    img: images.JavaScriptGame,
-    codeLanguage: 'vanilla JavaScript'
   },
   {
     id: 2,
