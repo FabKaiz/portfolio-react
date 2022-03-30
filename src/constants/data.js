@@ -5,7 +5,7 @@ const projects = [
   {
     id: 20,
     title: 'Mini jeux JavaScript',
-    description: `Mini jeux avec le minimun de style fait avec du`,
+    description: `Mini jeux comme Wordle, 2048, Puissance 4, pierre feuille ciseaux, etc... Avec le minimun de style fait avec du`,
     projectSite: 'https://javascript-minigames.netlify.app/',
     projectRepo: 'https://github.com/FabKaiz/javascript-games',
     img: images.JavaScriptGame,

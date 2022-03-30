@@ -36,7 +36,7 @@ import RoR            from '../assets/RoR.png';
 import ruby           from '../assets/ruby.png';
 import rails          from '../assets/rails.png';
 import analytics      from '../assets/analytics.jpg';
-import JavaScriptGame from '../assets/JSminigames.jpg';
+import JavaScriptGame from '../assets/JSgames.jpg';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
