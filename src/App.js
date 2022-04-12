@@ -16,6 +16,7 @@ function App() {
   // Google Analytics
   useEffect(() => {
     ReactGa.initialize(process.env.REACT_APP_GA_TRACKING_KEY);
+    console.log(process.env.REACT_APP_GA_TRACKING_KEY);
     ReactGa.pageview('/')
   }, [])
   
