@@ -8,10 +8,7 @@ import {
 } from "./container";
 import { Navbar, Footer, ParticleBackground } from "./components";
 import "./App.scss";
-import ReactGA from "react-ga4";
 
-ReactGA.initialize('G-YGGJBD6G3G');
-ReactGA.send("pageview");
 function App() {
   return (
     <div className="App">
