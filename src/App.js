@@ -8,15 +8,16 @@ import {
 } from "./container";
 import { Navbar, Footer, ParticleBackground } from "./components";
 import "./App.scss";
-import ReactGa from "react-ga";
+import ReactGA from "react-ga";
 import { useEffect } from "react";
+
 
 function App() {
 
   // Google Analytics
   useEffect(() => {
-    ReactGa.initialize('G-YGGJBD6G3G');
-    ReactGa.pageview('/')
+    ReactGA.initialize('G-YGGJBD6G3G');
+    ReactGA.pageview('/')
   }, [])
   
   return (
