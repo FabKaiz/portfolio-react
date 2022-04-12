@@ -8,18 +8,8 @@ import {
 } from "./container";
 import { Navbar, Footer, ParticleBackground } from "./components";
 import "./App.scss";
-import ReactGA from "react-ga";
-import { useEffect } from "react";
-
 
 function App() {
-
-  // Google Analytics
-  useEffect(() => {
-    ReactGA.initialize('G-YGGJBD6G3G');
-    ReactGA.pageview('/')
-  }, [])
-  
   return (
     <div className="App">
       <Navbar />
