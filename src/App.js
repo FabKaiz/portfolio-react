@@ -12,6 +12,7 @@ import ReactGa from "react-ga";
 import { useEffect } from "react";
 
 function App() {
+
   // Google Analytics
   useEffect(() => {
     ReactGa.initialize(process.env.REACT_APP_GA_TRACKING_KEY);
