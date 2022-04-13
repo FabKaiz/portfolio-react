@@ -289,8 +289,14 @@ const skills = [
 const qualification = [
   {
     year: 2022,
-    title: 'React',
+    title: 'React intermédiaire',
+    description: 'OpenClassrooms',
+  },
+  {
+    year: 2022,
+    title: 'React basics',
     description: 'Bob Ziroll - Scrimba',
+    className: 'opacity-0',
   },
   {
     year: 2022,
