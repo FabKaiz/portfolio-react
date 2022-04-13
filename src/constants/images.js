@@ -31,6 +31,7 @@ import firebase        from '../assets/firebase.png';
 import github         from '../assets/github.png';
 import heroku         from '../assets/heroku.png';
 import hotjar         from '../assets/hotjar.png';
+import jest           from '../assets/jest.png';
 import netlify        from '../assets/netlify.png';
 import RoR            from '../assets/RoR.png';
 import ruby           from '../assets/ruby.png';
@@ -79,4 +80,5 @@ export default {
   rails,
   analytics,
   JavaScriptGame,
+  jest,
 };

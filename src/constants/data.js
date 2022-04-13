@@ -275,14 +275,19 @@ const skills = [
     logo: images.hotjar,
   },
   {
-    id: 12,
+    id: 13,
     name: 'Firebase',
     logo: images.firebase,
   },
   {
-    id: 12,
+    id: 14,
     name: 'Netlify',
     logo: images.netlify,
+  },
+  {
+    id: 15,
+    name: 'Jest',
+    logo: images.jest,
   },
 ]
 
