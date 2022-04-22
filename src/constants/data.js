@@ -3,6 +3,15 @@ import images from './images';
 
 const projects = [
   {
+    id: 21,
+    title: 'Space Tourism',
+    description: `Challenge <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3" target="_blank">Frontend Mentor</a> 100% responsive réalisé a l'aide de`,
+    projectSite: 'https://space-tourism-react-fabkaiz.netlify.app/',
+    projectRepo: 'https://github.com/FabKaiz/react-space-tourism',
+    img: images.spaceTourism,
+    codeLanguage: 'React, React Router v6, framer-motion, React Transition Group, sass'
+  },
+  {
     id: 20,
     title: 'Mini jeux JavaScript',
     description: `Mini jeux comme Wordle, 2048, Puissance 4, pierre feuille ciseaux, etc... Avec le minimun de style fait avec du`,
