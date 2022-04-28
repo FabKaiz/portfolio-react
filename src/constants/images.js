@@ -39,6 +39,7 @@ import rails          from '../assets/rails.png';
 import analytics      from '../assets/analytics.jpg';
 import JavaScriptGame from '../assets/JSgames.jpg';
 import spaceTourism   from '../assets/space-tourism.png';
+import travelBlog     from '../assets/travelBlog.png';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   FCLogo,
@@ -82,4 +83,5 @@ export default {
   JavaScriptGame,
   jest,
   spaceTourism,
+  travelBlog,
 };

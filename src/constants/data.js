@@ -3,6 +3,15 @@ import images from './images';
 
 const projects = [
   {
+    id: 22,
+    title: 'Travel Blog',
+    description: `Blog de voyage fait de A a Z avec`,
+    projectSite: 'https://travel-blog-snowy.vercel.app/',
+    projectRepo: 'https://github.com/FabKaiz/travel-blog',
+    img: images.travelBlog,
+    codeLanguage: 'NextJs en frontend, Sanity pour le backend, mapboxGL, Groq, NProgress'
+  },
+  {
     id: 21,
     title: 'Space Tourism',
     description: `Challenge <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3" target="_blank">Frontend Mentor</a> 100% responsive réalisé a l'aide de`,
