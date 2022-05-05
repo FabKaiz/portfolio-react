@@ -3,6 +3,15 @@ import images from './images';
 
 const projects = [
   {
+    id: 23,
+    title: 'Site E-commerce',
+    description: `Faux site de e-commerce fait avec`,
+    projectSite: 'https://sanity-stripe-shop.vercel.app/',
+    projectRepo: 'https://github.com/FabKaiz/sanity-stripe-shop',
+    img: images.sanityStripe,
+    codeLanguage: 'NextJs en frontend, Sanity pour le backend, Stripe, canvas-confetti'
+  },
+  {
     id: 22,
     title: 'Travel Blog',
     description: `Blog de voyage fait de A a Z avec`,

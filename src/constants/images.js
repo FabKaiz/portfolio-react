@@ -40,6 +40,7 @@ import analytics      from '../assets/analytics.jpg';
 import JavaScriptGame from '../assets/JSgames.jpg';
 import spaceTourism   from '../assets/space-tourism.png';
 import travelBlog     from '../assets/travelBlog.png';
+import sanityStripe     from '../assets/sanityStripe.jpg';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   FCLogo,
@@ -84,4 +85,5 @@ export default {
   jest,
   spaceTourism,
   travelBlog,
+  sanityStripe,
 };
