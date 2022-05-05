@@ -264,6 +264,11 @@ const skills = [
     name: 'ReactJs',
     logo: images.react,
   },
+  {
+    id: 5,
+    name: 'NextJs',
+    logo: images.nextjsIcon,
+  },
   // BACKEND
   {
     id: 6,
