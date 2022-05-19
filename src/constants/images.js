@@ -42,6 +42,7 @@ import spaceTourism   from '../assets/space-tourism.png';
 import travelBlog     from '../assets/travelBlog.png';
 import sanityStripe     from '../assets/sanityStripe.jpg';
 import nextjsIcon     from '../assets/nextjs_icon.png';
+import admin from '../assets/admin.png';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -89,4 +90,5 @@ export default {
   travelBlog,
   sanityStripe,
   nextjsIcon,
+  admin,
 };

@@ -3,6 +3,15 @@ import images from './images';
 
 const projects = [
   {
+    id: 24,
+    title: 'Admin Panel',
+    description: `Panneau d'administration avec plusieurs theme réalisé avec`,
+    projectSite: 'https://sanity-stripe-shop.vercel.app/',
+    projectRepo: 'https://github.com/FabKaiz/sanity-stripe-shop',
+    img: images.admin,
+    codeLanguage: 'React, Material Ui Icons - Table - Data-grid, Recharts, Scss, React Router V6, React Circular Progressbar'
+  },
+  {
     id: 23,
     title: 'Site E-commerce',
     description: `Faux site de e-commerce fait avec`,
