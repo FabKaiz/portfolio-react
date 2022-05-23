@@ -6,8 +6,8 @@ const projects = [
     id: 24,
     title: 'Admin Panel',
     description: `Panneau d'administration avec plusieurs theme réalisé avec`,
-    projectSite: 'https://sanity-stripe-shop.vercel.app/',
-    projectRepo: 'https://github.com/FabKaiz/sanity-stripe-shop',
+    projectSite: 'https://fabkaiz-admin-panel.netlify.app/',
+    projectRepo: 'https://github.com/FabKaiz/admin-panel',
     img: images.admin,
     codeLanguage: 'React, Material Ui Icons - Table - Data-grid, Recharts, Scss, React Router V6, React Circular Progressbar'
   },
