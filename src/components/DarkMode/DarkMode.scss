@@ -41,7 +41,6 @@
       background-color: var(--first-color-second);
     }
   }
-  
 }
 
 .slider {
@@ -57,7 +56,7 @@
   &:before {
     background-color: #fff;
     bottom: 2px;
-    content: "";
+    content: '';
     height: 19px;
     left: 2px;
     position: absolute;

@@ -5,9 +5,9 @@ import {
   Portfolio,
   Qualification,
   RecentWork,
-} from "./container";
-import { Navbar, Footer, ParticleBackground } from "./components";
-import "./App.scss";
+} from './container'
+import { Navbar, Footer, ParticleBackground } from './components'
+import './App.scss'
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

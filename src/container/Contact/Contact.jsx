@@ -1,93 +1,92 @@
-import React, { useState } from 'react'
-import { BiSend } from 'react-icons/bi';
-import { motion } from 'framer-motion';
+import { useState } from 'react'
+import { BiSend } from 'react-icons/bi'
+import { motion } from 'framer-motion'
 
-import { HiOutlineLocationMarker, HiOutlinePhone } from 'react-icons/hi';
-import { MdOutlineAlternateEmail } from 'react-icons/md';
-import './Contact.scss';
+import { HiOutlineLocationMarker, HiOutlinePhone } from 'react-icons/hi'
+import { MdOutlineAlternateEmail } from 'react-icons/md'
+import './Contact.scss'
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
 
   const isEmail = () => {
-    let mail = document.getElementById('not-mail');
-    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    let mail = document.getElementById('not-mail')
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
 
     if (email.match(regex)) {
-      mail.style.opacity = 0;
+      mail.style.opacity = 0
       return true
     } else {
-      mail.style.opacity = 1;
-      mail.style.animation = 'dongle 1s';
+      mail.style.opacity = 1
+      mail.style.animation = 'dongle 1s'
       setTimeout(() => {
-        mail.style.animation = 'none';
-      }, 1000);
-      return false;
+        mail.style.animation = 'none'
+      }, 1000)
+      return false
     }
   }
 
   const failLMessage = () => {
-    const messageDiv = document.querySelector(".form-message")
-    messageDiv.classList.add('error-message');
-    messageDiv.innerHTML = "❌ Merci de remplir tout les champs obligatoires.";
+    const messageDiv = document.querySelector('.form-message')
+    messageDiv.classList.add('error-message')
+    messageDiv.innerHTML = '❌ Merci de remplir tout les champs obligatoires.'
 
-    document.getElementById('name').classList.add('error');
-    document.getElementById('email').classList.add('error');
-    document.getElementById('message').classList.add('error');
+    document.getElementById('name').classList.add('error')
+    document.getElementById('email').classList.add('error')
+    document.getElementById('message').classList.add('error')
   }
 
   const successMessage = () => {
-    const messageDiv = document.querySelector(".form-message")
+    const messageDiv = document.querySelector('.form-message')
 
-    messageDiv.classList.add('success-message');
-    messageDiv.innerHTML = '✔️ Message envoyé avec succès !';
+    messageDiv.classList.add('success-message')
+    messageDiv.innerHTML = '✔️ Message envoyé avec succès !'
 
-    document.getElementById('name').classList.remove('error');
-    document.getElementById('email').classList.remove('error');
-    document.getElementById('message').classList.remove('error');
+    document.getElementById('name').classList.remove('error')
+    document.getElementById('email').classList.remove('error')
+    document.getElementById('message').classList.remove('error')
 
     setTimeout(() => {
-      messageDiv.style.opacity = 0;
-    }, 5000);
+      messageDiv.style.opacity = 0
+    }, 5000)
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     if (name && isEmail() && message) {
-      sendFeedback("template_c5lf74b", {
+      sendFeedback('template_c5lf74b', {
         name,
         subject,
         email,
         message,
-      });
+      })
     } else {
       failLMessage()
     }
-  };
+  }
 
   const sendFeedback = (templateId, variables) => {
     window.emailjs
-      .send("service_ryoqa0c", templateId, variables)
+      .send('service_ryoqa0c', templateId, variables)
       .then((res) => {
         successMessage()
-        setName("");
-        setSubject("");
-        setEmail("");
-        setMessage("");
+        setName('')
+        setSubject('')
+        setEmail('')
+        setMessage('')
       })
       .catch((err) => {
-        const messageDiv = document.querySelector(".form-message")
-        messageDiv.classList.add('error-message');
+        const messageDiv = document.querySelector('.form-message')
+        messageDiv.classList.add('error-message')
         messageDiv.innerHTML =
-          "❌ Une erreur s'est produite, veuillez réessayer.";
-      });
-  };
+          "❌ Une erreur s'est produite, veuillez réessayer."
+      })
+  }
 
-  
   return (
     <section className="section contact" id="contact">
       <h2 className="section__title">Me contacter</h2>
@@ -214,7 +213,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 export default Contact

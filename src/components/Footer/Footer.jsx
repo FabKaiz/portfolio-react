@@ -1,4 +1,3 @@
-import React from 'react'
 import { BsGithub, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
 import './Footer.scss';

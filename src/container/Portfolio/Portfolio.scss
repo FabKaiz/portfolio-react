@@ -21,7 +21,7 @@
   position: relative;
   overflow: visible;
 
-  .react-multi-carousel-dot button{
+  .react-multi-carousel-dot button {
     border-width: 0;
     background: var(--first-color-lighter);
     transition: width 0.3s;
@@ -72,7 +72,7 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-  
+
     &:active {
       cursor: grabbing;
       cursor: -moz-grabbing;
@@ -82,7 +82,6 @@
   .react-multi-carousel-dot-list {
     flex-wrap: wrap;
   }
-
 }
 
 @media screen and (max-width: 720px) {

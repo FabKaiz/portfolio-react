@@ -4,18 +4,18 @@
   align-items: center;
   width: 180px;
   background-color: var(--first-color);
-  color:#fff;
+  color: #fff;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-weight: var(--font-medium);
-  transition: .2s;
+  transition: 0.2s;
 
   &:hover {
     background-color: var(--first-color-alt);
   }
 
   svg {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   &:hover svg {

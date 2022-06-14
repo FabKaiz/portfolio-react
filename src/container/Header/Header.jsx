@@ -1,17 +1,16 @@
-import React from 'react'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 import { BsMouse } from 'react-icons/bs'
 import { BiDownArrowAlt, BiSend } from 'react-icons/bi'
 
 import { Button } from '../../components'
-import './Header.scss';
+import './Header.scss'
 
 const Header = () => {
   const slideFromRight = {
     whileInView: { x: [200, 0], opacity: [0, 1] },
-    transition: { duration: 1 }
-  };
+    transition: { duration: 1 },
+  }
 
   return (
     <section className="home" id="home">
@@ -20,15 +19,15 @@ const Header = () => {
           <motion.p
             variants={slideFromRight}
             whileInView={slideFromRight.whileInView}
-            transition={{  duration: 1 }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
-            >
+          >
             Je suis
           </motion.p>
           <motion.h1
             variants={slideFromRight}
             whileInView={slideFromRight.whileInView}
-            transition={{  delay: 0.6, duration: 1 }}
+            transition={{ delay: 0.6, duration: 1 }}
             viewport={{ once: true }}
           >
             Fabien Chareun
@@ -36,16 +35,12 @@ const Header = () => {
           <motion.p
             variants={slideFromRight}
             whileInView={slideFromRight.whileInView}
-            transition={{  delay: 1.4, duration: 0.8 }}
+            transition={{ delay: 1.4, duration: 0.8 }}
             viewport={{ once: true }}
           >
             Développeur Web Front-end
           </motion.p>
-          <Button
-            title='Me Contacter'
-            href='#contact'
-            logo={<BiSend />}
-          />
+          <Button title="Me Contacter" href="#contact" logo={<BiSend />} />
           <div className="home__scroll">
             <a href="#about" className="home__scroll-button">
               <BsMouse />

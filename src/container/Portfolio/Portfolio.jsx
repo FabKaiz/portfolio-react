@@ -1,16 +1,15 @@
-import React from 'react'
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Carousel from 'react-multi-carousel'
+import 'react-multi-carousel/lib/styles.css'
 import { ImArrowRight2, ImArrowLeft2 } from 'react-icons/im'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
-import { ProjectCard } from '../../components';
+import { ProjectCard } from '../../components'
 import { data } from '../../constants'
-import './Portfolio.scss';
+import './Portfolio.scss'
 
 const responsive = {
   superLargeDesktop: {
-    breakpoint: { max: 3000, min: 2400},
+    breakpoint: { max: 3000, min: 2400 },
     items: 7,
     slidesToSlide: 4,
   },
@@ -41,21 +40,27 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 719, min: 0 },
-    items: 1
-  }
-};
+    items: 1,
+  },
+}
 
 const CustomLeftArrow = ({ onClick }) => (
-  <ImArrowLeft2 onClick={() => onClick()} className="custom-left-arrow carousel__arrow--left" />
-);
+  <ImArrowLeft2
+    onClick={() => onClick()}
+    className="custom-left-arrow carousel__arrow--left"
+  />
+)
 const CustomRightArrow = ({ onClick }) => (
-  <ImArrowRight2 className="custom-right-arrow carousel__arrow--right" onClick={() => onClick()} />
-);
+  <ImArrowRight2
+    className="custom-right-arrow carousel__arrow--right"
+    onClick={() => onClick()}
+  />
+)
 
 const appearing = {
   whileInView: { opacity: [0, 1] },
-  transition: { duration: 1 }
-};
+  transition: { duration: 1 },
+}
 
 const Portfolio = () => {
   return (
@@ -85,7 +90,7 @@ const Portfolio = () => {
         </Carousel>
       </div>
     </motion.section>
-  );
+  )
 }
 
 export default Portfolio

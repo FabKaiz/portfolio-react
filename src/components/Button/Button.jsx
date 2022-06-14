@@ -1,4 +1,3 @@
-import React from 'react'
 import './Button.scss'
 
 const Button = ({ href, title, logo, target, className }) => {

@@ -1,11 +1,8 @@
-import React from 'react'
-
 import './QualificationItem.scss'
 
 const QualificationItem = ({ year, title, description, className }) => {
   return (
     <div className="qualification__item">
-
       <div className="qualification__year">
         <h4 className={className}>{year}</h4>
       </div>
@@ -14,7 +11,6 @@ const QualificationItem = ({ year, title, description, className }) => {
         <h4>{title}</h4>
         <p>{description}</p>
       </div>
-
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 
 import './RepoCard.scss'
 
@@ -7,16 +7,16 @@ const RepoCard = ({ repo }) => {
 
   const capitalizeWords = (string) => {
     // Remove '-' characters of the repo name
-    const cleanString = string.replace(/-/g, " ")
+    const cleanString = string.replace(/-/g, ' ')
     // Return the name with all words capitalized
-    return cleanString.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
-  };
-   
+    return cleanString.replace(/(?:^|\s)\S/g, function (a) {
+      return a.toUpperCase()
+    })
+  }
+
   return (
     <div className="repo__container">
-      <h2 className="repo__title">
-        {capitalizeWords(repo.name)}
-      </h2>
+      <h2 className="repo__title">{capitalizeWords(repo.name)}</h2>
       <p>{repo.description}</p>
 
       <div className="repo__buttons">
@@ -28,12 +28,16 @@ const RepoCard = ({ repo }) => {
             Voir le site
           </a>
         )}
-        
       </div>
 
       <div className="line"></div>
 
-      <span className={`repo__language-tag ${languageRef.current}`} ref={languageRef}>{repo.language}</span>
+      <span
+        className={`repo__language-tag ${languageRef.current}`}
+        ref={languageRef}
+      >
+        {repo.language}
+      </span>
     </div>
   )
 }

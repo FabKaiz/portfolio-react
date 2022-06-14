@@ -1,9 +1,8 @@
-import React from 'react'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 import { data } from '../../constants'
 import { QualificationItem } from '../../components'
-import './Qualification.scss';
+import './Qualification.scss'
 
 const Qualification = () => {
   return (
@@ -51,7 +50,7 @@ const Qualification = () => {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 export default Qualification

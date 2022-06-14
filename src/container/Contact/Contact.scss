@@ -56,8 +56,8 @@
   font-family: var(--body-font);
   &:hover {
     svg {
-       transform: scale(1.1) rotate(0) translateX(10px);
-     }
+      transform: scale(1.1) rotate(0) translateX(10px);
+    }
   }
 }
 
@@ -68,13 +68,13 @@
 }
 
 .error-message {
-  color: #D8000C;
-  background-color: #FFD2D2;
+  color: #d8000c;
+  background-color: #ffd2d2;
 }
 
 .success-message {
-  color: #4F8A10;
-  background-color: #DFF2BF;
+  color: #4f8a10;
+  background-color: #dff2bf;
 }
 
 .email-content {
@@ -83,9 +83,9 @@
 
 #not-mail {
   opacity: 0;
-  color: #D8000C;
+  color: #d8000c;
   position: absolute;
-  left:  4px;
+  left: 4px;
   top: -25px;
 }
 

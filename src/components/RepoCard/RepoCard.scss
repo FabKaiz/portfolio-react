@@ -16,41 +16,41 @@
 
   /* Languages tag */
   .CSS {
-    background-color: #563D7C;
-    color:  var(--first-color-lighter);
+    background-color: #563d7c;
+    color: var(--first-color-lighter);
   }
 
   .JavaScript {
     color: black;
-    background-color: #F1E05A;
+    background-color: #f1e05a;
   }
 
   .HTML {
-    background-color: #E34C26;
+    background-color: #e34c26;
   }
 
   .Vue {
-    background-color: #41B883;
+    background-color: #41b883;
     color: white;
   }
 
   .Shell {
-    background-color: #89E051;
+    background-color: #89e051;
     color: white;
   }
 
   .Ruby {
-    background-color: #741F20;
+    background-color: #741f20;
     color: white;
   }
 
   .TypeScript {
-    background-color: #2B7489;
+    background-color: #2b7489;
     color: white;
   }
-  
+
   .SCSS {
-    background-color: #C6538C;
+    background-color: #c6538c;
     color: black;
   }
 }
@@ -66,8 +66,8 @@
 .repo__buttons {
   a {
     color: var(--first-color);
-    transition: .2s ease;
-    
+    transition: 0.2s ease;
+
     &:hover {
       text-decoration: underline;
       color: var(--first-color-alt);
@@ -94,7 +94,7 @@
   }
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width: 350px) {
   .repo__buttons {
     display: flex;
     flex-direction: column;

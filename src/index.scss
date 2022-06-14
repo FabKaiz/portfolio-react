@@ -1,5 +1,5 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
@@ -10,7 +10,11 @@
   /* Change favorite color */
   --hue-color: 244; /*Purple 250 - Green 142 - Blue 230 - Pink 340 - MyColor 244 - Greenblue  169/
   /* HSL color mode */
-  --first-color: hsl(var(--hue-color),69%, 61%); /* GreenBlue -> 78%, 39% - MyColor -> 69%, 61% */
+  --first-color: hsl(
+    var(--hue-color),
+    69%,
+    61%
+  ); /* GreenBlue -> 78%, 39% - MyColor -> 69%, 61% */
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 93%, 85%);
@@ -25,7 +29,7 @@
   --particle-color: #7c7c7c;
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: 'Poppins', sans-serif;
   --body-font-secondary: 'Teko', sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -163,14 +167,14 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 /*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar {
-  width: .6rem;
+  width: 0.6rem;
   background-color: var(--scroll-bar-color);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -179,7 +183,7 @@ img {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--scroll-thumb-color);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -187,7 +191,7 @@ img {
 }
 
 /*==================== LAYOUT Media Queries ====================*/
-@media screen and (min-width:841px) {
+@media screen and (min-width: 841px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -198,7 +202,7 @@ img {
   }
 
   .section {
-    padding: 6rem 0 2rem
+    padding: 6rem 0 2rem;
   }
 
   .section__subtitle {
