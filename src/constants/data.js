@@ -1,7 +1,16 @@
 // Here all my recent projects and qualifications
-import images from './images';
+import images from './images'
 
 const projects = [
+  {
+    id: 25,
+    title: 'Medium Clone',
+    description: `Reproduction du celebre site Medium fait avec `,
+    projectSite: 'https://nextjs-sanity-medium.vercel.app/',
+    projectRepo: 'https://github.com/FabKaiz/nextjs-sanity-medium',
+    img: images.mediumClone,
+    codeLanguage: 'NextJs, Tailwind, TypeScript et Sanity',
+  },
   {
     id: 24,
     title: 'Admin Panel',
@@ -9,7 +18,8 @@ const projects = [
     projectSite: 'https://fabkaiz-admin-panel.netlify.app/',
     projectRepo: 'https://github.com/FabKaiz/admin-panel',
     img: images.admin,
-    codeLanguage: 'React, Material Ui Icons - Table - Data-grid, Recharts, Scss, React Router V6, React Circular Progressbar'
+    codeLanguage:
+      'React, Material Ui Icons - Table - Data-grid, Recharts, Scss, React Router V6, React Circular Progressbar',
   },
   {
     id: 23,
@@ -18,7 +28,8 @@ const projects = [
     projectSite: 'https://sanity-stripe-shop.vercel.app/',
     projectRepo: 'https://github.com/FabKaiz/sanity-stripe-shop',
     img: images.sanityStripe,
-    codeLanguage: 'NextJs en frontend, Sanity pour le backend, Stripe, canvas-confetti'
+    codeLanguage:
+      'NextJs en frontend, Sanity pour le backend, Stripe, canvas-confetti',
   },
   {
     id: 22,
@@ -27,7 +38,8 @@ const projects = [
     projectSite: 'https://travel-blog-snowy.vercel.app/',
     projectRepo: 'https://github.com/FabKaiz/travel-blog',
     img: images.travelBlog,
-    codeLanguage: 'NextJs en frontend, Sanity pour le backend, mapboxGL, Groq, NProgress'
+    codeLanguage:
+      'NextJs en frontend, Sanity pour le backend, mapboxGL, Groq, NProgress',
   },
   {
     id: 21,
@@ -36,7 +48,8 @@ const projects = [
     projectSite: 'https://space-tourism-react-fabkaiz.netlify.app/',
     projectRepo: 'https://github.com/FabKaiz/react-space-tourism',
     img: images.spaceTourism,
-    codeLanguage: 'React, React Router v6, framer-motion, React Transition Group, sass'
+    codeLanguage:
+      'React, React Router v6, framer-motion, React Transition Group, sass',
   },
   {
     id: 20,
@@ -45,27 +58,29 @@ const projects = [
     projectSite: 'https://javascript-minigames.netlify.app/',
     projectRepo: 'https://github.com/FabKaiz/javascript-games',
     img: images.JavaScriptGame,
-    codeLanguage: 'vanilla JavaScript'
+    codeLanguage: 'vanilla JavaScript',
   },
   {
     id: 1,
     title: 'Gerich restaurant responsive',
     description: `Reproduction d'une maquette Figma d'un restaurant 100% responsive, réalisé avec`,
-    figmaLink: 'https://www.figma.com/file/yvClSI9AZBRX8UaaGEByF3/Modern-UI%2FUX%3A-Gericht?node-id=53%3A2',
+    figmaLink:
+      'https://www.figma.com/file/yvClSI9AZBRX8UaaGEByF3/Modern-UI%2FUX%3A-Gericht?node-id=53%3A2',
     projectSite: 'https://gerich-restaurant.netlify.app/',
     projectRepo: 'https://github.com/FabKaiz/gerich-restaurant',
     img: images.Port14,
-    codeLanguage: 'React'
+    codeLanguage: 'React',
   },
   {
     id: 2,
     title: 'Modern UI/UX GPT-3 Website',
     description: `Site static reprenant les design modernes des sites web GPT-3, réalisé avec`,
-    figmaLink: 'https://www.figma.com/file/lz9lLpFHMxHm2odnwM3R0z/gpt3?node-id=0%3A1',
+    figmaLink:
+      'https://www.figma.com/file/lz9lLpFHMxHm2odnwM3R0z/gpt3?node-id=0%3A1',
     projectSite: 'https://gpt3-modern-react.netlify.app/',
     projectRepo: 'https://github.com/FabKaiz/modern-gpt3-react',
     img: images.Port13,
-    codeLanguage: 'React'
+    codeLanguage: 'React',
   },
   {
     id: 3,
@@ -76,7 +91,7 @@ const projects = [
     projectSite: 'https://fabkaiz.github.io/gsap3-bella/',
     projectRepo: 'https://github.com/FabKaiz/gsap3-bella',
     img: images.Port10,
-    codeLanguage: 'GSAP, ScrollTrigger, BarbaJs, Smooth Scrolling..'
+    codeLanguage: 'GSAP, ScrollTrigger, BarbaJs, Smooth Scrolling..',
   },
   {
     id: 4,
@@ -85,7 +100,7 @@ const projects = [
     projectSite: 'https://fabienchareun.com/',
     projectRepo: 'https://github.com/FabKaiz/portfolio1',
     img: images.firstPortfolio,
-    codeLanguage: 'HTML, CSS, JavaScript'
+    codeLanguage: 'HTML, CSS, JavaScript',
   },
   {
     id: 19,
@@ -93,19 +108,21 @@ const projects = [
     description: `Landing page d'une application d'analytique 100% responsive codé avec`,
     projectSite: 'https://analytics-landing-react.netlify.app/',
     projectRepo: 'https://github.com/FabKaiz/analytics-landing-react',
-    figmaLink: 'https://www.figma.com/file/K8RIvVtJKHdXIqjpAPe97y/Analytics-%E2%80%94-Landing-Page-Design',
+    figmaLink:
+      'https://www.figma.com/file/K8RIvVtJKHdXIqjpAPe97y/Analytics-%E2%80%94-Landing-Page-Design',
     img: images.analytics,
-    codeLanguage: 'React et Scss'
+    codeLanguage: 'React et Scss',
   },
   {
     id: 5,
     title: 'Responsive food delivery app',
     description: `Landing page of a food delivery app`,
-    figmaLink: 'https://www.figma.com/file/KawxNnCZ1epHjQu0wSqlG2/Food-delivery-app-Ui-kit?node-id=0%3A1',
+    figmaLink:
+      'https://www.figma.com/file/KawxNnCZ1epHjQu0wSqlG2/Food-delivery-app-Ui-kit?node-id=0%3A1',
     projectSite: 'https://bella-olonje-delivery.netlify.app/',
     projectRepo: 'https://github.com/FabKaiz/food-delivery-app',
     img: images.foodDelivery,
-    codeLanguage: 'React'
+    codeLanguage: 'React',
   },
   {
     id: 6,
@@ -115,7 +132,8 @@ const projects = [
     projectSite: 'https://travel-advisor-fabkaiz.netlify.app/',
     projectRepo: 'https://github.com/FabKaiz/travel-advisor-react',
     img: images.Port12,
-    codeLanguage: 'React, Google maps API, Travel Advisor et Weather API, MaterialUI'
+    codeLanguage:
+      'React, Google maps API, Travel Advisor et Weather API, MaterialUI',
   },
   {
     id: 7,
@@ -125,7 +143,7 @@ const projects = [
     projectSite: 'https://nextjs-real-estate-nu.vercel.app/',
     projectRepo: 'https://github.com/FabKaiz/nextjs-real-estate',
     img: images.Port11,
-    codeLanguage: 'NextJs, ChakraUi, millify, axios, NProgress, BayutAPI'
+    codeLanguage: 'NextJs, ChakraUi, millify, axios, NProgress, BayutAPI',
   },
   {
     id: 8,
@@ -136,7 +154,7 @@ const projects = [
     projectSite: 'https://fabkaiz.github.io/gsap3-pen-reveal/',
     projectRepo: 'https://github.com/FabKaiz/gsap3-pen-reveal',
     img: images.Port9,
-    codeLanguage: 'JavaScript, ScrollTrigger, GSAP'
+    codeLanguage: 'JavaScript, ScrollTrigger, GSAP',
   },
   {
     id: 13,
@@ -145,7 +163,7 @@ const projects = [
     projectSite: 'https://barbajs-gsap.netlify.app/',
     projectRepo: 'https://github.com/FabKaiz/barbajs-101',
     img: images.barbajsGsap,
-    codeLanguage: 'BarbaJs, GSAP and JavaScript'
+    codeLanguage: 'BarbaJs, GSAP and JavaScript',
   },
   {
     id: 9,
@@ -155,7 +173,7 @@ const projects = [
     projectSite: 'https://fabkaiz.github.io/gsap-slider-office/',
     projectRepo: 'https://github.com/FabKaiz/gsap3-slider-office',
     img: images.Port8,
-    codeLanguage: 'JavaScript, GSAP'
+    codeLanguage: 'JavaScript, GSAP',
   },
   {
     id: 10,
@@ -167,7 +185,8 @@ const projects = [
     projectRepo: 'https://github.com/fannymugnier/chin-up',
     img: images.Port1,
     codeLanguage: 'Ruby on Rails, JavaScript et Scss',
-    youtubeLink: 'https://www.youtube.com/watch?v=hJlf25bwRkI&list=PLwqwOtDwK_Zar-JrPOEAMDwYRiGay7Xw6&ab_channel=LeWagonLyon'
+    youtubeLink:
+      'https://www.youtube.com/watch?v=hJlf25bwRkI&list=PLwqwOtDwK_Zar-JrPOEAMDwYRiGay7Xw6&ab_channel=LeWagonLyon',
   },
   {
     id: 11,
@@ -178,7 +197,7 @@ const projects = [
     projectSite: 'https://fabkaiz.github.io/snake-game-javascript/',
     projectRepo: 'https://github.com/FabKaiz/snake-game-javascript',
     img: images.Port4,
-    codeLanguage: ''
+    codeLanguage: '',
   },
   {
     id: 12,
@@ -187,7 +206,7 @@ const projects = [
     projectSite: 'https://fabkaiz.github.io/meme-generator-react/',
     projectRepo: 'https://github.com/FabKaiz/meme-generator-react',
     img: images.memeGenerator,
-    codeLanguage: 'Meme API et React'
+    codeLanguage: 'Meme API et React',
   },
   {
     id: 14,
@@ -196,17 +215,18 @@ const projects = [
     projectSite: 'https://barbajs-css.netlify.app/',
     projectRepo: 'https://github.com/FabKaiz/barbajs-101',
     img: images.barbajsCss,
-    codeLanguage: 'BarbaJs, Scss et JavaScript'
+    codeLanguage: 'BarbaJs, Scss et JavaScript',
   },
   {
     id: 15,
     title: 'Suinnyside agency',
     description: `Frontend mentor challenges réalisé avec`,
-    figmaLink: 'https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef',
+    figmaLink:
+      'https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef',
     projectSite: 'https://sunnyside-vue.web.app/',
     projectRepo: 'https://github.com/FabKaiz/sunnyside-agency',
     img: images.Port7,
-    codeLanguage: 'Vue, Scss'
+    codeLanguage: 'Vue, Scss',
   },
   {
     id: 16,
@@ -215,7 +235,7 @@ const projects = [
     projectSite: 'https://find-coach-c96a2.web.app/coaches',
     projectRepo: 'https://github.com/FabKaiz/find-coach-vue',
     img: images.Port6,
-    codeLanguage: 'VueJS'
+    codeLanguage: 'VueJS',
   },
   {
     id: 17,
@@ -224,7 +244,7 @@ const projects = [
     projectSite: 'https://fabkaiz.github.io/Javascript-component/',
     projectRepo: 'https://github.com/FabKaiz/Javascript-component',
     img: images.Port3,
-    codeLanguage: 'JavaScript'
+    codeLanguage: 'JavaScript',
   },
   {
     id: 18,
@@ -233,7 +253,7 @@ const projects = [
       pour <strong> Le Wagon Lyon</strong>. Codé en`,
     projectSite: 'https://grab-a-star.herokuapp.com/',
     img: images.Port2,
-    codeLanguage: 'Ruby on Rails'
+    codeLanguage: 'Ruby on Rails',
   },
   //   {
   //   id: 20,
@@ -376,4 +396,4 @@ const qualification = [
 ]
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default { projects, skills, qualification };
+export default { projects, skills, qualification }
