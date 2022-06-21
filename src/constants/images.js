@@ -44,6 +44,7 @@ import sanityStripe   from '../assets/sanityStripe.jpg';
 import nextjsIcon     from '../assets/nextjs_icon.png';
 import admin          from '../assets/admin.png';
 import mediumClone    from '../assets/mediumClone.png';
+import instaClone     from '../assets/instaClone.png';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -92,5 +93,6 @@ export default {
   sanityStripe,
   nextjsIcon,
   admin,
-  mediumClone
+  mediumClone,
+  instaClone,
 };

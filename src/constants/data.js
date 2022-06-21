@@ -3,6 +3,15 @@ import images from './images'
 
 const projects = [
   {
+    id: 26,
+    title: '"Fakestagram" - Insta Clone',
+    description: `Reproduction du celebre site Instagram fait avec `,
+    projectSite: 'https://instagram-clone-nextjs-gamma.vercel.app/',
+    projectRepo: 'https://github.com/FabKaiz/instagram-clone-nextjs',
+    img: images.instaClone,
+    codeLanguage: 'NextJs, Next Auth, Recoil, Tailwind, Firebase et OAuth',
+  },
+  {
     id: 25,
     title: 'Medium Clone',
     description: `Reproduction du celebre site Medium fait avec `,
