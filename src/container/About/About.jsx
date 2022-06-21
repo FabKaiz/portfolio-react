@@ -1,20 +1,20 @@
 import { motion } from 'framer-motion'
 
 import { SiNotion, SiGithub } from 'react-icons/si'
-import { Button } from '../../components';
-import { images } from '../../constants';
-import './About.scss';
+import { Button } from '../../components'
+import { images } from '../../constants'
+import './About.scss'
 
 const About = () => {
   const slideFromLeft = {
     whileInView: { x: [-100, 0], opacity: [0, 1] },
-    transition: { duration: 1 }
-  };
+    transition: { duration: 1 },
+  }
 
   const slideFromRight = {
     whileInView: { x: [100, 0], opacity: [0, 1] },
-    transition: { duration: 1 }
-  };
+    transition: { duration: 1 },
+  }
 
   return (
     <section className="about section" id="about">
@@ -42,22 +42,22 @@ const About = () => {
             devenir <strong>développeur web.</strong> Apres
             <strong> 9 semaines</strong> à <strong>Le Wagon Lyon</strong> dont
             <strong> 2 semaines de projet en équipe</strong> j'ai obtenu ma
-            certification de{" "}
+            certification de{' '}
             <strong>concepteur-développeur d’applications web</strong>. Je
-            souhaite maintenant me spécialiser dans le{" "}
+            souhaite maintenant me spécialiser dans le{' '}
             <strong>Front-end</strong>.
           </p>
 
           <div className="about__info">
             <div>
-              <span className="about__info-title">20+</span>
+              <span className="about__info-title">25+</span>
               <span className="about__info-name">
                 Outils
                 <br /> utilisés
               </span>
             </div>
             <div>
-              <span className="about__info-title">25+</span>
+              <span className="about__info-title">30+</span>
               <span className="about__info-name">
                 Projet
                 <br /> terminés
@@ -91,7 +91,7 @@ const About = () => {
         </motion.div>
       </div>
     </section>
-  );
+  )
 }
 
 export default About
