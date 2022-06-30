@@ -3,6 +3,16 @@ import images from './images'
 
 const projects = [
   {
+    id: 27,
+    title: 'Woodies',
+    description: `Maquette dribbble de magasin de meubles en ligne, reproduit avec `,
+    figmaLink: 'https://dribbble.com/shots/11018704/attachments/2612947?mode=media',
+    projectSite: 'https://woodies-nextjs.vercel.app/',
+    projectRepo: 'https://github.com/FabKaiz/woodies-nextjs',
+    img: images.woodies,
+    codeLanguage: 'NextJs, Scss',
+  },
+  {
     id: 26,
     title: '"Fakestagram" - Insta Clone',
     description: `Reproduction du celebre site Instagram fait avec `,
