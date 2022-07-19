@@ -3,6 +3,16 @@ import images from './images'
 
 const projects = [
   {
+    id: 28,
+    title: 'Data processing app',
+    description: `Maquette dribbble d'une app de traitement des données, reproduit avec `,
+    figmaLink: 'https://dribbble.com/shots/15102679-Dark-Landing-Page-Concept-For-Data-Processing-Company',
+    projectSite: 'https://data-landing-nextjs.vercel.app/',
+    projectRepo: 'https://github.com/FabKaiz/data-landing-nextjs',
+    img: images.dataProcessing,
+    codeLanguage: 'NextJs, Scss',
+  },
+  {
     id: 27,
     title: 'Woodies',
     description: `Maquette dribbble de magasin de meubles en ligne, reproduit avec `,

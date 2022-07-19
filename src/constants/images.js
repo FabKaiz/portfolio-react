@@ -46,6 +46,8 @@ import admin          from '../assets/admin.png';
 import mediumClone    from '../assets/mediumClone.png';
 import instaClone     from '../assets/instaClone.png';
 import woodies        from '../assets/woodies.png'
+import dataProcessing from '../assets/dataProcessing.png'
+
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -97,4 +99,5 @@ export default {
   mediumClone,
   instaClone,
   woodies,
+  dataProcessing,
 };
