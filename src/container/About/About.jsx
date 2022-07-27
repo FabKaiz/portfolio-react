@@ -28,6 +28,7 @@ const About = () => {
           src={images.meAbout}
           alt="me at le wagon"
           className="about__img"
+          loading="lazy"
         />
 
         <motion.div

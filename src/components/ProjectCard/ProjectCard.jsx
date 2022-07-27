@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="ProjectCard__container">
       <div className="img__container">
-        <img src={project.img} alt="screenshot of the website" />
+        <img src={project.img} loading="lazy" alt="screenshot of the website" />
       </div>
 
       <div className="ProjectCard__content">

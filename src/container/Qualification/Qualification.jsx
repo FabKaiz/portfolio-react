@@ -23,7 +23,7 @@ const Qualification = () => {
               key={skill.name}
             >
               <div className="skill__logo">
-                <img src={skill.logo} alt="skill logo" />
+                <img src={skill.logo} loading="lazy" alt="skill logo" />
                 <p>{skill.name}</p>
               </div>
             </motion.div>
