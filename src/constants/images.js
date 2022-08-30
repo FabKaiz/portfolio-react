@@ -1,52 +1,52 @@
 import FCLogo         from '../assets/FC-logo.png';
 import FCLogoFinal    from '../assets/FC-logo-final.png';
 import meAbout        from '../assets/meabout-sml.webp';
-import Port1          from '../assets/port1.png';
-import Port2          from '../assets/port2.png';
-import Port3          from '../assets/port3.png';
-import Port4          from '../assets/port4.png';
-import Port5          from '../assets/port5.png';
-import Port6          from '../assets/port6.png';
-import Port7          from '../assets/port7.jpg';
-import Port8          from '../assets/port8.png';
-import Port9          from '../assets/port9.png';
-import Port10         from '../assets/port10.png';
-import Port11         from '../assets/port11.jpg';
-import Port12         from '../assets/port12.jpg';
-import Port13         from '../assets/port13.jpg';
-import Port14         from '../assets/port14.jpg';
-import firstPortfolio  from '../assets/firstPortfolio.jpg';
-import foodDelivery   from '../assets/foodDelivery.jpg';
-import memeGenerator  from '../assets/memeGenerator.jpg';
-import barbajsGsap    from '../assets/barbajsGsap.jpg';
-import barbajsCss     from '../assets/barbajsCss.jpg';
-import figma           from '../assets/figma.png';
-import html           from '../assets/html.png';
-import javascript     from '../assets/javascript.png';
-import react          from '../assets/react.png';
-import sass           from '../assets/sass.png';
-import vue            from '../assets/vue.png';
-import db             from '../assets/db.png';
-import firebase        from '../assets/firebase.png';
-import github         from '../assets/github.png';
-import heroku         from '../assets/heroku.png';
-import hotjar         from '../assets/hotjar.png';
-import jest           from '../assets/jest.png';
-import netlify        from '../assets/netlify.png';
-import RoR            from '../assets/RoR.png';
-import ruby           from '../assets/ruby.png';
-import rails          from '../assets/rails.png';
-import analytics      from '../assets/analytics.jpg';
-import JavaScriptGame from '../assets/JSgames.jpg';
-import spaceTourism   from '../assets/space-tourism.png';
-import travelBlog     from '../assets/travelBlog.png';
-import sanityStripe   from '../assets/sanityStripe.jpg';
-import nextjsIcon     from '../assets/nextjs_icon.png';
-import admin          from '../assets/admin.png';
-import mediumClone    from '../assets/mediumClone.png';
-import instaClone     from '../assets/instaClone.png';
-import woodies        from '../assets/woodies.png'
-import dataProcessing from '../assets/dataProcessing.png'
+import Port1          from '../assets/websiteScreenshot/port1.png';
+import Port2          from '../assets/websiteScreenshot/port2.png';
+import Port3          from '../assets/websiteScreenshot/port3.png';
+import Port4          from '../assets/websiteScreenshot/port4.png';
+import Port5          from '../assets/websiteScreenshot/port5.png';
+import Port6          from '../assets/websiteScreenshot/port6.png';
+import Port7          from '../assets/websiteScreenshot/port7.jpg';
+import Port8          from '../assets/websiteScreenshot/port8.png';
+import Port9          from '../assets/websiteScreenshot/port9.png';
+import Port10         from '../assets/websiteScreenshot/port10.png';
+import Port11         from '../assets/websiteScreenshot/port11.jpg';
+import Port12         from '../assets/websiteScreenshot/port12.jpg';
+import Port13         from '../assets/websiteScreenshot/port13.jpg';
+import Port14         from '../assets/websiteScreenshot/port14.jpg';
+import firstPortfolio  from '../assets/websiteScreenshot/firstPortfolio.jpg';
+import foodDelivery   from '../assets/websiteScreenshot/foodDelivery.jpg';
+import memeGenerator  from '../assets/websiteScreenshot/memeGenerator.jpg';
+import barbajsGsap    from '../assets/websiteScreenshot/barbajsGsap.jpg';
+import barbajsCss     from '../assets/websiteScreenshot/barbajsCss.jpg';
+import figma           from '../assets/skillsLogo/figma.png';
+import html           from '../assets/skillsLogo/html.png';
+import javascript     from '../assets/skillsLogo/javascript.png';
+import react          from '../assets/skillsLogo/react.png';
+import sass           from '../assets/skillsLogo/sass.png';
+import vue            from '../assets/skillsLogo/vue.png';
+import db             from '../assets/skillsLogo/db.png';
+import firebase        from '../assets/skillsLogo/firebase.png';
+import github         from '../assets/skillsLogo/github.png';
+import heroku         from '../assets/skillsLogo/heroku.png';
+import hotjar         from '../assets/skillsLogo/hotjar.png';
+import jest           from '../assets/skillsLogo/jest.png';
+import netlify        from '../assets/skillsLogo/netlify.png';
+import ruby           from '../assets/skillsLogo/ruby.png';
+import rails          from '../assets/skillsLogo/rails.png';
+import analytics      from '../assets/websiteScreenshot/analytics.jpg';
+import JavaScriptGame from '../assets/websiteScreenshot/JSgames.jpg';
+import spaceTourism   from '../assets/websiteScreenshot/space-tourism.png';
+import travelBlog     from '../assets/websiteScreenshot/travelBlog.png';
+import sanityStripe   from '../assets/websiteScreenshot/sanityStripe.jpg';
+import nextjsIcon     from '../assets/skillsLogo/nextjs_icon.png';
+import admin          from '../assets/websiteScreenshot/admin.png';
+import mediumClone    from '../assets/websiteScreenshot/mediumClone.png';
+import instaClone     from '../assets/websiteScreenshot/instaClone.png';
+import woodies        from '../assets/websiteScreenshot/woodies.png'
+import dataProcessing from '../assets/websiteScreenshot/dataProcessing.png'
+import crappoCrypto   from '../assets/websiteScreenshot/crappoCrypto.png'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -85,7 +85,6 @@ export default {
   heroku,
   hotjar,
   netlify,
-  RoR,
   ruby,
   rails,
   analytics,
@@ -100,4 +99,5 @@ export default {
   instaClone,
   woodies,
   dataProcessing,
+  crappoCrypto,
 };
