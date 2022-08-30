@@ -3,10 +3,22 @@ import images from './images'
 
 const projects = [
   {
+    id: 29,
+    title: 'Crappo Crypto',
+    description: `Maquette dribbble d'une app de minage de cryptomonnaie, 100% responsive, reproduit avec `,
+    figmaLink:
+      'https://dribbble.com/shots/15067925--Freebie-CRAPPO-Cryptocurrency-Website',
+    projectSite: 'https://crappo-crypto-ts.vercel.app/',
+    projectRepo: 'https://github.com/FabKaiz/crappo-crypto-ts',
+    img: images.crappoCrypto,
+    codeLanguage: 'NextJs, Typescript, Scss et React Icons',
+  },
+  {
     id: 28,
     title: 'Data processing app',
     description: `Maquette dribbble d'une app de traitement des données, reproduit avec `,
-    figmaLink: 'https://dribbble.com/shots/15102679-Dark-Landing-Page-Concept-For-Data-Processing-Company',
+    figmaLink:
+      'https://dribbble.com/shots/15102679-Dark-Landing-Page-Concept-For-Data-Processing-Company',
     projectSite: 'https://data-landing-nextjs.vercel.app/',
     projectRepo: 'https://github.com/FabKaiz/data-landing-nextjs',
     img: images.dataProcessing,
@@ -16,7 +28,8 @@ const projects = [
     id: 27,
     title: 'Woodies',
     description: `Maquette dribbble de magasin de meubles en ligne, reproduit avec `,
-    figmaLink: 'https://dribbble.com/shots/11018704/attachments/2612947?mode=media',
+    figmaLink:
+      'https://dribbble.com/shots/11018704/attachments/2612947?mode=media',
     projectSite: 'https://woodies-nextjs.vercel.app/',
     projectRepo: 'https://github.com/FabKaiz/woodies-nextjs',
     img: images.woodies,
@@ -284,15 +297,6 @@ const projects = [
     img: images.Port2,
     codeLanguage: 'Ruby on Rails',
   },
-  //   {
-  //   id: 20,
-  //   title: '',
-  //   description: ``,
-  //   projectSite: '',
-  //   projectRepo: '',
-  //   img: images.Port10,
-  //   codeLanguage: ''
-  // },
 ]
 
 const skills = [
