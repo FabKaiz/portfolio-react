@@ -4,7 +4,7 @@ import images from './images'
 const projects = [
   {
     id: 29,
-    title: 'Mounting Unmounting animation',
+    title: 'Mounting animation',
     description: `Des animations au montage et demontage des components, reproduit avec `,
     projectSite: 'https://react-spring-mounting-unmounting.netlify.app/',
     projectRepo: 'https://github.com/FabKaiz/react-mount-unmount-animations',
