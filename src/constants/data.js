@@ -4,6 +4,15 @@ import images from './images'
 const projects = [
   {
     id: 29,
+    title: 'Mounting Unmounting animation',
+    description: `Des animations au montage et demontage des components, reproduit avec `,
+    projectSite: 'https://react-spring-mounting-unmounting.netlify.app/',
+    projectRepo: 'https://github.com/FabKaiz/react-mount-unmount-animations',
+    img: images.reactSpring1,
+    codeLanguage: 'React et React Spring',
+  },
+  {
+    id: 29,
     title: 'Crappo Crypto',
     description: `Maquette dribbble d'une app de minage de cryptomonnaie, 100% responsive, reproduit avec `,
     figmaLink:
@@ -388,8 +397,14 @@ const skills = [
 const qualification = [
   {
     year: 2022,
+    title: 'TypeScript',
+    description: 'Jack Herrington',
+  },
+  {
+    year: 2022,
     title: 'React intermédiaire',
     description: 'OpenClassrooms',
+    className: 'opacity-0',
   },
   {
     year: 2022,

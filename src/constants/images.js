@@ -47,6 +47,7 @@ import instaClone     from '../assets/websiteScreenshot/instaClone.png';
 import woodies        from '../assets/websiteScreenshot/woodies.png'
 import dataProcessing from '../assets/websiteScreenshot/dataProcessing.png'
 import crappoCrypto   from '../assets/websiteScreenshot/crappoCrypto.png'
+import reactSpring1   from '../assets/websiteScreenshot/reactSpring1.png'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -100,4 +101,5 @@ export default {
   woodies,
   dataProcessing,
   crappoCrypto,
+  reactSpring1,
 };
