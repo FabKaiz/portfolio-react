@@ -14,6 +14,8 @@ const RepoCard = ({ repo }) => {
     })
   }
 
+  if (languageRef.current === null) repo.language = 'Readme'
+
   return (
     <div className="repo__container">
       <h2 className="repo__title">{capitalizeWords(repo.name)}</h2>
@@ -30,7 +32,7 @@ const RepoCard = ({ repo }) => {
         )}
       </div>
 
-      <div className="line"></div>
+      <div className="line" />
 
       <span
         className={`repo__language-tag ${languageRef.current}`}
