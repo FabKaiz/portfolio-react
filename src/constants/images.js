@@ -48,6 +48,7 @@ import woodies        from '../assets/websiteScreenshot/woodies.png'
 import dataProcessing from '../assets/websiteScreenshot/dataProcessing.png'
 import crappoCrypto   from '../assets/websiteScreenshot/crappoCrypto.png'
 import reactSpring1   from '../assets/websiteScreenshot/reactSpring1.png'
+import contentLoader  from '../assets/websiteScreenshot/contentLoader.png'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -102,4 +103,5 @@ export default {
   dataProcessing,
   crappoCrypto,
   reactSpring1,
+  contentLoader,
 };

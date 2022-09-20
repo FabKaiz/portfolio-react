@@ -3,7 +3,16 @@ import images from './images'
 
 const projects = [
   {
-    id: 29,
+    id: 31,
+    title: 'Custom loader',
+    description: `Des "loader" custom avec different type/style en fonction de la data qu'on doit charger, reproduit avec `,
+    projectSite: 'https://react-custom-content-loader-fabkaiz.netlify.app/',
+    projectRepo: 'https://github.com/FabKaiz/react-custom-content-loader',
+    img: images.contentLoader,
+    codeLanguage: 'React et React content loader',
+  },
+  {
+    id: 30,
     title: 'Mounting animation',
     description: `Des animations au montage et demontage des components, reproduit avec `,
     projectSite: 'https://react-spring-mounting-unmounting.netlify.app/',
