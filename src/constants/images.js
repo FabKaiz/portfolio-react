@@ -49,6 +49,7 @@ import dataProcessing from '../assets/websiteScreenshot/dataProcessing.png'
 import crappoCrypto   from '../assets/websiteScreenshot/crappoCrypto.png'
 import reactSpring1   from '../assets/websiteScreenshot/reactSpring1.png'
 import contentLoader  from '../assets/websiteScreenshot/contentLoader.png'
+import framerMotion  from '../assets/websiteScreenshot/framerMotion.png'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -104,4 +105,5 @@ export default {
   crappoCrypto,
   reactSpring1,
   contentLoader,
+  framerMotion,
 };

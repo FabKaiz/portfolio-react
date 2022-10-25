@@ -3,6 +3,15 @@ import images from './images'
 
 const projects = [
   {
+    id: 32,
+    title: 'Framer Motion animations',
+    description: `Plusieurs type d'animations, reproduit avec `,
+    projectSite: 'https://framer-motion-react-fabkaiz.netlify.app/',
+    projectRepo: 'https://github.com/FabKaiz/framer-motion-react',
+    img: images.framerMotion,
+    codeLanguage: 'React, du CSS et Framer Motion',
+  },
+  {
     id: 31,
     title: 'Custom loader',
     description: `Des "loader" custom avec different type/style en fonction de la data qu'on doit charger, reproduit avec `,
