@@ -74,7 +74,7 @@ const About = () => {
 
           <div className="about__buttons">
             <Button
-              href="https://fabien-chareun.notion.site/fabien-chareun/Fabien-Chareun-0534008f12c14f299289e8285c7de2ff"
+              href="https://fabien-chareun.notion.site/fabien-chareun/Fabien-Chareun-Portfolio-b073981572194d799605f39d2544b400"
               target="_blank"
               title="Ouvrir mon CV"
               logo={<SiNotion />}
