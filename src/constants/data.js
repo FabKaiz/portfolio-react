@@ -3,6 +3,15 @@ import images from './images'
 
 const projects = [
   {
+    id: 33,
+    title: 'BuzzFeed Clone',
+    description: `Clone des celebres quiz du site BuzzFeed, reproduit avec `,
+    projectSite: 'https://typescript-buzzfeed-clone-production-602d.up.railway.app/',
+    projectRepo: 'https://github.com/FabKaiz/typescript-buzzfeed-clone',
+    img: images.buzzfeed,
+    codeLanguage: 'React, TypeScript, NodeJS et axios',
+  },
+  {
     id: 32,
     title: 'Framer Motion animations',
     description: `Plusieurs type d'animations, reproduit avec `,

@@ -49,7 +49,8 @@ import dataProcessing from '../assets/websiteScreenshot/dataProcessing.png'
 import crappoCrypto   from '../assets/websiteScreenshot/crappoCrypto.png'
 import reactSpring1   from '../assets/websiteScreenshot/reactSpring1.png'
 import contentLoader  from '../assets/websiteScreenshot/contentLoader.png'
-import framerMotion  from '../assets/websiteScreenshot/framerMotion.png'
+import framerMotion   from '../assets/websiteScreenshot/framerMotion.png'
+import buzzfeed       from '../assets/websiteScreenshot/buzzfeed.png'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -106,4 +107,5 @@ export default {
   reactSpring1,
   contentLoader,
   framerMotion,
+  buzzfeed,
 };
