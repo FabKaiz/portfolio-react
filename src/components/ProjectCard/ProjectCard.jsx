@@ -21,14 +21,17 @@ const ProjectCard = ({ project }) => {
       </div>
 
       <div className="project__buttons">
-        <Button
-          href={project.projectSite}
-          target="_blank"
-          title="Site"
-          logo={<CgWebsite />}
-          rel="noreferrer"
-          className="project__btn"
-        />
+        {project.projectSite && (
+          <Button
+            href={project.projectSite}
+            target="_blank"
+            title="Site"
+            logo={<CgWebsite />}
+            rel="noreferrer"
+            className="project__btn"
+          />
+        )}
+
         {project.projectRepo && (
           <Button
             href={project.projectRepo}
