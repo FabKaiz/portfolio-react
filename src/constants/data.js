@@ -418,6 +418,11 @@ const skills = [
     name: 'Jest',
     logo: images.jest,
   },
+  {
+    id: 16,
+    name: 'MongoDB',
+    logo: images.mongodb,
+  },
 ]
 
 const qualification = [

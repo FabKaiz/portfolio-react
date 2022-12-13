@@ -51,6 +51,7 @@ import reactSpring1   from '../assets/websiteScreenshot/reactSpring1.png'
 import contentLoader  from '../assets/websiteScreenshot/contentLoader.png'
 import framerMotion   from '../assets/websiteScreenshot/framerMotion.png'
 import buzzfeed       from '../assets/websiteScreenshot/buzzfeed.png'
+import mongodb        from '../assets/skillsLogo/mongodb-icon.svg'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -108,4 +109,5 @@ export default {
   contentLoader,
   framerMotion,
   buzzfeed,
+  mongodb
 };
