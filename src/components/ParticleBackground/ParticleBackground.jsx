@@ -1,32 +1,53 @@
-import React, { useState, useEffect } from 'react'
-
-import Particles from "react-tsparticles";
-import {particlesConfigDark, particlesConfigLight} from "./particles-config.js"
-
+import React, { useState, useLayoutEffect } from 'react'
+import Particles from 'react-tsparticles'
+import {
+  particlesConfigDark,
+  particlesConfigLight,
+} from './particles-config.js'
 import './ParticleBackground.scss'
 
 const ParticleBackground = () => {
-  const [particleColor, setParticleColor] = useState(false);
-  
-  const dataTheme = document.querySelector('[data-theme]');
+  const [particleColor, setParticleColor] = useState(undefined)
+  const [particleKey, setParticleKey] = useState(4)
 
-  const handleThemeChange = () => {
-    const theme = document.querySelector('[data-theme]').dataset.theme;
+  const dataTheme = document.querySelector('[data-theme]')
 
-    theme === 'dark' ? setParticleColor(true) : setParticleColor(false);
+  const setAndHandleThemeChange = () => {
+    const storedTheme = localStorage.getItem('theme')
+
+    storedTheme === 'dark'
+      ? setParticleColor(particlesConfigDark)
+      : setParticleColor(particlesConfigLight)
   }
 
-  useEffect(() => {
-    handleThemeChange()
-  }, []);
+  const handleVisibilityChange = () => {
+    if (document.visibilityState === 'visible') {
+      setParticleKey(particleKey + 1)
+    }
+  }
 
-  dataTheme.addEventListener('change', () => handleThemeChange())
+  useLayoutEffect(() => {
+    setAndHandleThemeChange()
+
+    document.addEventListener('visibilitychange', () =>
+      handleVisibilityChange()
+    )
+    dataTheme.addEventListener('change', () => setAndHandleThemeChange())
+
+    return () => {
+      document.removeEventListener('visibilitychange', () =>
+        handleVisibilityChange()
+      )
+      dataTheme.removeEventListener('change', () => setAndHandleThemeChange())
+    }
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <Particles
       id="tsparticles-custom"
-      options={particleColor ? particlesConfigDark : particlesConfigLight }
-      style={{position: 'absolute', }}
+      key={particleKey}
+      options={particleColor}
+      style={{ position: 'absolute' }}
     />
   )
 }
