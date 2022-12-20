@@ -1,5 +1,5 @@
 const particlesConfigLight = {
-  fullScreen: { enable: false, zIndex: 1 },
+  fullScreen: { enable: true, zIndex: 1 },
   particles: {
     number: {
       value: 38,
@@ -111,7 +111,7 @@ const particlesConfigLight = {
 }
 
 const particlesConfigDark = {
-  fullScreen: { enable: false, zIndex: 1 },
+  fullScreen: { enable: true, zIndex: 1 },
   particles: {
     number: {
       value: 38,

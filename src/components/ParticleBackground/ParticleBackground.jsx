@@ -7,7 +7,7 @@ import {
 import './ParticleBackground.scss'
 
 const ParticleBackground = () => {
-  const [particleColor, setParticleColor] = useState(undefined)
+  const [particleColor, setParticleColor] = useState(particlesConfigLight)
   const [particleKey, setParticleKey] = useState(4)
 
   const dataTheme = document.querySelector('[data-theme]')
