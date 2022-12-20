@@ -3,6 +3,9 @@
   border: 1px solid var(--first-color-lighter);
   border-radius: 0.5rem;
   width: 450px;
+  background-color: var(--body-color);
+  z-index: 9;
+  position: relative;
 
   h2 {
     margin-bottom: 1rem;

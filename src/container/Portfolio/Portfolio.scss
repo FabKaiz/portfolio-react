@@ -1,6 +1,8 @@
 .portfolio {
   padding-top: 2rem;
   margin-top: 4rem;
+  z-index: 9;
+  position: relative;
 
   .section__subtitle {
     color: #ffffffbd;

@@ -5,6 +5,8 @@
 .about__container {
   display: flex;
   justify-content: center;
+  z-index: 9;
+  position: relative;
 }
 
 .about__img {
@@ -19,6 +21,11 @@
 
   p {
     margin-bottom: var(--mb-2);
+    background-color: var(--body-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    z-index: 9;
+    position: relative;
   }
 
   .about__info {

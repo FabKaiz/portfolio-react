@@ -23,6 +23,8 @@
   align-items: center;
   text-align: center;
   margin: 1rem;
+  z-index: 9;
+  position: relative;
 
   p {
     font-size: var(--small-font-size);
