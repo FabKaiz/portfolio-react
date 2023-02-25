@@ -171,15 +171,6 @@ const projects = [
     codeLanguage: 'GSAP, ScrollTrigger, BarbaJs, Smooth Scrolling..',
   },
   {
-    id: 4,
-    title: 'Mon ancien portfolio',
-    description: `Mon premier portfolio, réalisé avec`,
-    projectSite: 'https://fabienchareun.com/',
-    projectRepo: 'https://github.com/FabKaiz/portfolio1',
-    img: images.firstPortfolio,
-    codeLanguage: 'HTML, CSS, JavaScript',
-  },
-  {
     id: 19,
     title: 'Analytics app',
     description: `Landing page d'une application d'analytique 100% responsive codé avec`,

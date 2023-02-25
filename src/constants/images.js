@@ -15,7 +15,6 @@ import Port11         from '../assets/websiteScreenshot/port11.jpg';
 import Port12         from '../assets/websiteScreenshot/port12.jpg';
 import Port13         from '../assets/websiteScreenshot/port13.jpg';
 import Port14         from '../assets/websiteScreenshot/port14.jpg';
-import firstPortfolio  from '../assets/websiteScreenshot/firstPortfolio.jpg';
 import foodDelivery   from '../assets/websiteScreenshot/foodDelivery.jpg';
 import memeGenerator  from '../assets/websiteScreenshot/memeGenerator.jpg';
 import barbajsGsap    from '../assets/websiteScreenshot/barbajsGsap.jpg';
@@ -73,7 +72,6 @@ export default {
   Port12,
   Port13,
   Port14,
-  firstPortfolio,
   foodDelivery,
   memeGenerator,
   barbajsGsap,
