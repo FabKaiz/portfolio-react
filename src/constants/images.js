@@ -51,6 +51,7 @@ import contentLoader  from '../assets/websiteScreenshot/contentLoader.png'
 import framerMotion   from '../assets/websiteScreenshot/framerMotion.png'
 import buzzfeed       from '../assets/websiteScreenshot/buzzfeed.png'
 import mongodb        from '../assets/skillsLogo/mongodb-icon.svg'
+import shopify        from '../assets/skillsLogo/shopify.png'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -107,5 +108,6 @@ export default {
   contentLoader,
   framerMotion,
   buzzfeed,
-  mongodb
+  mongodb,
+  shopify
 };

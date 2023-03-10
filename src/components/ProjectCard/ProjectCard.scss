@@ -54,11 +54,13 @@
 .ProjectCard__content {
   padding: 1.5rem 2rem;
 
-  h4 {
+  .ProjectCard__content-title {
     margin-bottom: 1rem;
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
   }
 
-  p {
+  .ProjectCard__content-description {
     font-size: var(--smaller-font-size);
     height: 100px;
 

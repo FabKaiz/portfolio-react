@@ -414,9 +414,19 @@ const skills = [
     name: 'MongoDB',
     logo: images.mongodb,
   },
+  {
+    id: 17,
+    name: 'Shopify',
+    logo: images.shopify,
+  }
 ]
 
 const qualification = [
+   {
+    year: 2023,
+    title: 'Alternance intégrateur Shopify',
+    description: 'Axome Saint Etienne - Ecole: OpencClassrooms',
+  },
   {
     year: 2022,
     title: 'TypeScript',

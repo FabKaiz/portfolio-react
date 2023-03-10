@@ -128,7 +128,7 @@ const Contact = () => {
             <div>
               <h3 className="contact__title">Localisation</h3>
               <span className="contact__subtitle">
-                Saint Laurent de mure 69720 - (30km de Lyon)
+                Saint Etienne 42000
               </span>
             </div>
           </motion.div>

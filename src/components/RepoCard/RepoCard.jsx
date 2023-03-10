@@ -18,8 +18,8 @@ const RepoCard = ({ repo }) => {
 
   return (
     <div className="repo__container">
-      <h2 className="repo__title">{capitalizeWords(repo.name)}</h2>
-      <p>{repo.description}</p>
+      <p className="repo__title">{capitalizeWords(repo.name)}</p>
+      <p className="repo__description">{repo.description}</p>
 
       <div className="repo__buttons">
         <a href={repo.html_url} target="_blank" rel="noreferrer">

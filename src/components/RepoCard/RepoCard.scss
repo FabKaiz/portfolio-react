@@ -7,11 +7,14 @@
   z-index: 9;
   position: relative;
 
-  h2 {
+  .repo__title {
     margin-bottom: 1rem;
+    font-size: 1.5em;
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
   }
 
-  p {
+  .repo__description {
     min-height: 69px;
     font-size: var(--small-font-size);
     margin-bottom: 1rem;

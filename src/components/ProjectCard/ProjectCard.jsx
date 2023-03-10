@@ -12,10 +12,10 @@ const ProjectCard = ({ project }) => {
       </div>
 
       <div className="ProjectCard__content">
-        <h4>{project.title}</h4>
+        <p className="ProjectCard__content-title">{project.title}</p>
         <div
           dangerouslySetInnerHTML={{
-            __html: `<p>${project.description} <strong>${project.codeLanguage}.</strong></p>`,
+            __html: `<p class="ProjectCard__content-description">${project.description} <strong>${project.codeLanguage}.</strong></p>`,
           }}
         />
       </div>
